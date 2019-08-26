@@ -1,0 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Header */
+
+header section{
+	margin: 1em auto;
+	display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+header .webNav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+
+/* Navigation */
+
+header .navigation {
+	display: flex;
+	justify-content: center;
+}
+
+header .navigation ul a{ 
+	justify-content: space-between;
+	text-decoration: none;
+	padding: 0 1em;
+}
+
+.navigation img{
+    height: 60px;
+}
+
+.navigation p{
+    font-size: 2rem;
+    color: #D80000;
+    font-weight: bold;
+    /* padding: 0 2em; */
+}
+
+header span{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+	header .webNav{
+		display: none;
+	}
+	header nav{
+		margin-left: 30%;
+		flex-direction: column;
+	}
+	nav .fas{
+		position: absolute
+	}
+}
+
+/* Login */
+
+body .loginBox{
+    height: 70%;
+    width: auto;
+    object-fit: cover;
+    background: url("images/peopleEating.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+body form{
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    text-align: center;
+    padding-top: 20px;  
+}
+
+.loginBox p{
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    color: #C6C6C6;
+    margin-left: 10%;
+}
+
+.loginBox input{
+    width: 80%;
+    margin: 12px auto;
+}
+
+.loginBox img{
+    height: 80px;
+    margin-bottom: 5px;
+}
+.loginBox input[type='text'], input[type='password']{
+    border: 1px solid #C6C6C6;
+    background: #fff;
+    height: 30px;    
+}
+
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 60px;
+    background-color: #D80000;
+    color: white;
+}
+
+.loginBox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #C6C6C6;
+    color: black;
+}
+
+.loginBox a{
+    text-decoration: none;
+    text-align: bottom;
+    color: #C6C6C6;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 500px){
+    body form{
+        background: #fff;
+        text-align: center;
+    }
+
+    body .loginBox{
+        margin-bottom: 0;
+    }
+    .loginBox img{
+        display: none;
+    }
+
+    /* header span{
+        display: flexbox;
+    } */
+}
+
+/* content */
+
+
+.content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* -webkit-box-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+
+.content div{
+    padding: 5px;
+    align-content: center;
+}
+
+.content h2{
+    font-size: 25px;
+    color: #D80000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+/* Explore and Eat*/
+
+.explore{
+    margin-bottom: 5em;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore div{
+    padding: 5px;
+    align-content: center;
+    max-width: 40%;
+}
+
+.explore div img{
+    width: 100%;
+}
+.explore div .div1{
+    width: 30%;
+}
+
+
+/*How it Works*/
+
+.howItWorks div{
+    padding: 5px;
+    align-content: center;    
+}
+
+.howItWorks{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10% auto;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D80000;
+}
+
+.howItWorks .div3{
+    max-width: 30%;
+}
+
+.howItWorks .div3 h2{
+    color: white;
+}
+
+.howItWorks .div4{
+    justify-content: space-between;
+    margin: 15px;
+    width: 40%;
+    /* box-sizing: border-box; */ 
+}
+
+.howItWorks div img{
+    height: 450px;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px){
+    .content{ 
+        width: 100%;        
+    }
+    .explore, .howItWorks{
+        flex-direction: column;
+        margin: 1em auto;
+    }
+    .explore div, .howItWorks .div3{
+        max-width: 95%;
+        margin-top: 10%;
+    }
+    .howItWorks div .screenShot2, .screenShot3{
+        display: none;
+    }
+    .howItWorks div .screenShot1{
+        width: 100%;
+        height: auto;
+    }
+    .howItWorks div{
+        justify-content: center;
+    }
+}
+
+
+
+/* Food Pics */
+
+/* .foodCategories .foodPics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.foodCategories .foodPics img {
+	width: 20em;
+	height: 20em;
+	object-fit: cover;
+    margin: 20px 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodCategories .foodPics .box1{
+    width: 12.5%;
+	height: 100px;
+	overflow-y: hidden;
+    margin: 20px 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  */
+
+
+footer{
+    background-color: #D80000;
+    height: 20%;
+    margin-top: 5em;
+}
+
+footer p{
+    text-align: center;
+    padding: 2em;
+}
