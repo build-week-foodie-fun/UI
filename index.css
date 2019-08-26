@@ -191,7 +191,6 @@ body form{
 .content div{
     padding: 5px;
     align-content: center;
-    max-width: 40%;
 }
 
 .content h2{
@@ -229,19 +228,34 @@ body form{
 
 .howItWorks div{
     padding: 5px;
-    align-content: center;
-    max-width: 40%;
+    align-content: center;    
+}
+
+.howItWorks{
     display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10% auto;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D80000;
+}
+
+.howItWorks .div3{
+    max-width: 40%;
 }
 
 .howItWorks .div4{
-    background-color: #D80000;
-    display: flex;
-    justify-content: space-between;
+    
+    justify-content: space-evenly;
+    margin: 15px;
+    width: 100%;
+    /* box-sizing: border-box; */ 
 }
 
 .howItWorks div img{
-    height: 400px;
+    height: 450px;
+    justify-content: space-evenly;
 }
 
 
@@ -273,3 +287,15 @@ body form{
     align-items: center;
     justify-content: center;
 }  */
+
+
+footer{
+    background-color: #D80000;
+    height: 20%;
+    margin-top: 5em;
+}
+
+footer p{
+    text-align: center;
+    padding: 2em;
+}
