@@ -61,3 +61,61 @@ header span {
 }
 
 /* About */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 0 4rem;
+}
+
+.about-info h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.meet-the-team {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+
+.meet-the-team .title {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.team-profiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.team-profiles .team-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #7c7c7c;
+  border-radius: 6px;
+}
+
+.team-profile-img {
+  background: #D80000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.team-profile .team-role {
+  padding: 2rem 0;
+}
+
+.team-role ul li {
+  padding: 1rem 0;
+  list-style: disc;
+  
+}
+
