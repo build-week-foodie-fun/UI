@@ -50,7 +50,6 @@ table {
 }
 
 
-
 /* Header */
 
 header section{
@@ -96,7 +95,7 @@ header span{
 }
 
 @media screen and (max-width: 500px){
-	header nav{
+	header .webNav{
 		display: none;
 	}
 	header nav{
@@ -121,7 +120,7 @@ body .loginBox{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em auto;
+    margin-bottom: 5em;
 }
 
 body form{
@@ -176,6 +175,24 @@ body form{
     font-size: 12px;
 }
 
+@media screen and (max-width: 500px){
+    body form{
+        background: #fff;
+        text-align: center;
+    }
+
+    body .loginBox{
+        margin-bottom: 0;
+    }
+    .loginBox img{
+        display: none;
+    }
+
+    /* header span{
+        display: flexbox;
+    } */
+}
+
 /* content */
 
 
@@ -194,15 +211,20 @@ body form{
 }
 
 .content h2{
-    font-size: 18px;
+    font-size: 25px;
     color: #D80000;
     font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content p{
+    font-size: 20px;
 }
 
 /* Explore and Eat*/
 
 .explore{
-    margin: 0 auto;
+    margin-bottom: 5em;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -215,12 +237,11 @@ body form{
     max-width: 40%;
 }
 
-
 .explore div img{
     width: 100%;
 }
 .explore div .div1{
-    width: 40%;
+    width: 30%;
 }
 
 
@@ -242,20 +263,47 @@ body form{
 }
 
 .howItWorks .div3{
-    max-width: 40%;
+    max-width: 30%;
+}
+
+.howItWorks .div3 h2{
+    color: white;
 }
 
 .howItWorks .div4{
-    
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 15px;
-    width: 100%;
+    width: 40%;
     /* box-sizing: border-box; */ 
 }
 
 .howItWorks div img{
     height: 450px;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px){
+    .content{ 
+        width: 100%;        
+    }
+    .explore, .howItWorks{
+        flex-direction: column;
+        margin: 1em auto;
+    }
+    .explore div, .howItWorks .div3{
+        max-width: 95%;
+        margin-top: 10%;
+    }
+    .howItWorks div .screenShot2, .screenShot3{
+        display: none;
+    }
+    .howItWorks div .screenShot1{
+        width: 100%;
+        height: auto;
+    }
+    .howItWorks div{
+        justify-content: center;
+    }
 }
 
 

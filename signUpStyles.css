@@ -81,3 +81,13 @@ html {
   transform: scale(1.1);
   transition: ease-in 0.2s;
 }
+
+@media screen and (max-width: 500px){
+  .sign-up-form form{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .sign-up-form input{
+    max-width: 95%;
+  }
+}
