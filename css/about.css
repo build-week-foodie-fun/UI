@@ -1,0 +1,58 @@
+/* Header */
+
+header section {
+  margin: 1em auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+header .webNav {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+
+/* Navigation */
+
+header .navigation {
+  display: flex;
+  justify-content: center;
+}
+
+header .navigation ul a {
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+.navigation img {
+  height: 60px;
+}
+
+.navigation p {
+  font-size: 2rem;
+  color: #D80000;
+  font-weight: bold;
+  /* padding: 0 2em; */
+}
+
+header span {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    display: none;
+  }
+
+  header nav {
+    margin-left: 30%;
+    flex-direction: column;
+  }
+
+  nav .fas {
+    position: absolute
+  }
+}
