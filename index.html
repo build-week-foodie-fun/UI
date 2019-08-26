@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Foodie Fun</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script>
+    function openSlideMenu(){
+      document.getElementById('menu').style.width = '250px';
+      document.getElementById('content').style.marginLeft = '250px';
+    }
+  </script>
+  
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header>  
+  <section class = "navigation">
+    <img src="images/Foodie_Icon.png"/>
+    <p>Foodie Fun</p>
+    <div class="webNav">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="#">Mission</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+        </ul>
+    </div>
+
+    <div id="content">
+      <span class="slide">
+        <a href="#" onClick="openSlideMenu()">
+          <i class="fas fa-bars" ></i>
+        </a>
+      </span>
+
+      <span id="menu" class="navSlide">
+        <a href="#" onClick="closeSlideMenu()">
+          <i class="fas fa-times" ></i>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="#">Mission</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+      </span>
+    </div>
+    </section>
+</header>
+
+<section class="loginBox">
+    <form>
+        <img src="images/Foodie_Icon.png"/>
+        <p>Username</p>
+        <input type="text" name="" placeholder="">
+        <p>Password</p>
+        <input type="password" name="" placeholder="">
+        <input type="submit" name="" value="Login"><br>
+        <a href="#">Sign Up</a>
+    </form>
+
+</section>
+
+<section class="content">
+  <!--content -->
+    <section class="explore">    
+        <div>
+            <h2>Explore and Eat</h2>
+            <p>The perfect app for avid foodies, Foodie Fun is built for those who love going out to explore new eats.  It's design to for you to share where you've eaten, what you ordered, what you liked and didn’t like, what the wait time was a certain times of day, etc.  Did I like the burrito or enchilada better? The spicy version or normal?
+            </p>
+        </div>
+        <div>
+            <img src="images/phoneAndFood.jpg"/>
+        </div>
+    </section><!--closes explore-->
+
+    <!-- <section class="foodCategories">     -->
+        <!-- <div class="foodPics">
+            <img src="images/sushi.jpg" class="box1"/>
+            <img src="images/breakfast.jpg" class="box2"/>
+            <img src="images/burger.jpg" class="box3"/>
+            <img src="images/pasta.jpg" class="box4"/>
+            <img src="images/vegan.jpg" class="box5"/>
+            <img src="images/donuts.jpg" class="box6"/>
+        </div> -->
+    <!-- </section>closes food categories -->
+
+</section><!--closes content-->
+
+</body>
+
+
+
