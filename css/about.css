@@ -87,7 +87,7 @@ header span {
 
 .team-profiles {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
@@ -101,6 +101,7 @@ header span {
   border-radius: 6px;
   background: #ededed;
   box-shadow: 2px 2px 2px #ededed;
+  margin: 1rem 0;
 }
 
 .team-profile-img {
