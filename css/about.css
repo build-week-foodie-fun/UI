@@ -25,6 +25,8 @@ header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
   padding: 0 1em;
+  font-family: 'Montserrat', sans-serif;
+  color: #7c7c7c;
 }
 
 .navigation img {
