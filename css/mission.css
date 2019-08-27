@@ -98,15 +98,19 @@ header span{
     header{
         position: fixed;
         background: #fff;
-        width: 100%
+        width: 100%;
+        top: 0;
+        padding-top: 5px;
     }
 	header .webNav{
-		display: none;
-	}
+        display: none;
+    }
+    header section{
+        margin: 0;
+    }
 	header nav{
 		margin-left: 30%;
         flex-direction: column;
-
 	}
 	nav .fas{
 		position: absolute;
@@ -159,4 +163,170 @@ header span{
     }
 }
 
-/* CONTENT */
+
+                                /* CONTENT */
+.content{
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 25px;
+    color: #D80000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Steps */
+.steps{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.steps div h3{
+    text-align: center;
+    color: #d80000;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.steps div img{
+    height: 20em;
+    width: 20em;
+    overflow: hidden;
+    position: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 500px){
+    body .content{
+        width: 90%;
+        margin: 0;
+    }
+    body .content p{
+        font-size: 18px;
+    }
+    .steps{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .steps div{
+        margin: 0 auto;
+    }
+    .steps div img{
+        height: 10em;
+        width: 10em;
+    }
+}
+
+/* Features */
+.features{
+    margin-bottom: 5%;
+}
+.features .text{
+    max-width: 30%;
+    margin-left: 25%;
+}
+
+.features ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.features .appImg{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #D80000;
+}
+.features .appImg img{
+    max-width: 25%;
+    padding: 2.5%;
+    box-sizing: border-box;
+    border-radius: 3.5em;
+}
+
+@media screen and (max-width: 500px){
+    .features{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .features .text{
+        max-width: 90%;
+        margin: 0;
+        justify-content: center;
+    }
+    .features ol{
+        margin-left: 10px;
+    }
+    .features .appImg{
+        display: none;
+        flex-direction: column;
+    }
+}
+
+/* Get Started */
+.getStarted{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.getStarted div{
+    max-width: 30%;
+}
+
+
+.getStarted div.button a button {
+    /* max-width: 50%; */
+    margin: 0 auto;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background: #d80000;
+    color: #ededed;
+    outline: none; 
+    border-radius: .6rem;
+    box-shadow: 2px 2px 2px #d8d5d5;
+    transition: ease-out 0.2s;
+  }
+  
+  .getStarted div.button a button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+  }
+
+  @media screen and (max-width: 500px){
+      .getStarted{
+          flex-direction: column;
+          /* margin-top: 5%; */
+      }
+      .getStarted div{
+          max-width: 90%;
+          display: flex;
+          justify-content: center;
+      }
+      .getStarted .text2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 0; 
+        margin: 0 auto;
+      }
+      .getStarted div.button{
+          margin: 0 auto;
+      }
+  }
+
+  /* Footer */
+  footer{
+    background-color: #D80000;
+    height: 20%;
+    margin-top: 5em;
+}
+
+footer p{
+    text-align: center;
+    padding: 2em;
+    color: #C6C6C6;
+}

@@ -98,15 +98,19 @@ header span{
     header{
         position: fixed;
         background: #fff;
-        width: 100%
+        width: 100%;
+        top: 0;
+        padding-top: 5px;
     }
 	header .webNav{
 		display: none;
-	}
+    }
+    header section{
+        margin: 0;
+    }
 	header nav{
 		margin-left: 30%;
         flex-direction: column;
-
 	}
 	nav .fas{
 		position: absolute;
@@ -161,7 +165,43 @@ header span{
 
 /* Login */
 
-body .loginBox{
+body .banner{
+    /* height: 70%; */
+    width: 100%;
+    object-fit: cover;
+    /* background: url("images/peopleEating.jpg"); */
+    /* background-size: cover;
+    background-position: center; */
+    /* padding: 2% 0; */
+    /* /* display: flex; */
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    max-height: 700px;
+}
+
+body .banner img{
+    width: 100%;
+    max-height: 700px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+body .banner h1{
+    font-size: 80px;
+    width: 50%;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    top: 350px;
+    justify-content: center; 
+    z-index: -1;
+}
+
+/* body .loginBox{
     height: 70%;
     width: auto;
     object-fit: cover;
@@ -230,7 +270,7 @@ body form{
 @media screen and (max-width: 500px){
     body form{
         margin-top: 140px;/*get to 50px*/
-        background: #fff;
+        /* background: #fff;
         text-align: center;
         align-items: center;
     }
@@ -244,20 +284,22 @@ body form{
 
     .loginBox form{
         align-self: center;
-    }
+    } */ 
 
     /* header span{
         display: flexbox;
     } */
-}
+/* } */
+
+
 
 /* content */
-
 
 .content{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-top: 500px;
     /* -webkit-box-align: center;
     align-items: center;
     justify-content: center; */
@@ -283,6 +325,7 @@ body form{
 
 .explore{
     margin-bottom: 5em;
+    padding-top: 50%;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -341,15 +384,23 @@ body form{
     height: 30em;
     /* padding: 2em; */
     justify-content: space-between;
+    border-radius: 1em;
 }
 
 @media screen and (max-width: 500px){
     .content{ 
         width: 100%;        
     }
+
+    body section.banner h1{
+        text-align: center;
+    }
+    .explore{
+        padding: 5% 0;
+    }
     .explore, .howItWorks{
         flex-direction: column;
-        margin: 1em auto;
+        margin: 0 auto;
     }
     .explore div, .howItWorks .div3{
         max-width: 95%;
@@ -366,6 +417,12 @@ body form{
         height: auto;
     }
     .howItWorks div{
+        justify-content: center;
+    }
+
+    .aboutUs div{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 }
