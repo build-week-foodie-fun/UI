@@ -113,7 +113,6 @@ header span {
 
 .team-profiles {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
@@ -121,24 +120,26 @@ header span {
 @media (max-width: 500px) {
   .team-profiles {
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .team-profile {
     width: 100%;    
+    align-items: center;
   }
 }
 
 .team-profiles .team-profile {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
   padding: 2rem;
   border: 1px solid #7c7c7c;
   border-radius: 6px;
   background: #ededed;
   box-shadow: 2px 2px 2px #ededed;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .team-profile-img {
@@ -152,6 +153,7 @@ header span {
 .team-profile-img img {
   width: 100%;
   border-radius: 50%;
+  align-self: center;
   filter: grayscale(40%);
 }
 
@@ -164,10 +166,14 @@ header span {
   list-style: disc;
 }
 
+.github-link {
+  align-self: center;
+}
+
 .github-link i {
   font-size: 2.4rem;
   transition: ease-out 0.2s;
-  color: black
+  color: black;
 }
 
 @media (max-width: 500px) {
