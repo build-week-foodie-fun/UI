@@ -53,18 +53,72 @@ header span {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
-  header nav {
-    display: none;
+@media screen and (max-width: 500px){
+  header{
+      position: fixed;
+      background: #fff;
+      width: 100%;
+      top: 0;
+      padding-top: 5px;
+  }
+header .webNav{
+      display: none;
+  }
+  header section{
+      margin: 0;
+  }
+header nav{
+  margin-left: 30%;
+      flex-direction: column;
+}
+nav .fas{
+  position: absolute;
+  }
+  header span{
+      display: initial;
+  }
+  .navSlide{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      opacity: .9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.7s;
   }
 
-  header nav {
-    margin-left: 30%;
-    flex-direction: column;
+  .navSlide a{
+      display: block;
+      padding: 20px 30px;
+      font-size: 25px;
+      text-decoration: none;
+      color: black;
   }
 
-  nav .fas {
-    position: absolute
+  /* .slideMenu a:onClick{
+      color: rgb(105, 41, 124);
+      transition: 0.4s
+  } */
+  .navSlide .fa-times{
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      margin-left: 40px;
+  }
+
+  #slideContent span .slide a{
+      color: black;
+      font-size: 36px;
+  }
+  #slideContent{
+      padding: 20px;
+      transition: margin-left 0.7s;
+      overflow: hidden;
+      width: 100%
   }
 }
 
