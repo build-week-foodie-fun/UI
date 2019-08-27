@@ -48,7 +48,7 @@ header .navigation ul a:hover {
   font-weight: bold;
 }
 
-header span {
+header .slideMenu {
   display: none;
 }
 

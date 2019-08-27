@@ -76,7 +76,15 @@ header .navigation {
 header .navigation ul a{ 
 	justify-content: space-between;
 	text-decoration: none;
-	padding: 0 1em;
+    padding: 0 1em;
+    color: #7c7c7c;
+    transition: ease-out 0.2s;
+}
+
+header .navigation ul a:hover {
+    color: black;
+    transition: ease-in 0.2s;
+    text-shadow: 1px 1px 1px #ededed;
 }
 
 .navigation img{
@@ -87,7 +95,6 @@ header .navigation ul a{
     font-size: 2rem;
     color: #D80000;
     font-weight: bold;
-    /* padding: 0 2em; */
 }
 
 header span{
@@ -140,10 +147,6 @@ header span{
         color: black;
     }
 
-    /* .slideMenu a:onClick{
-        color: rgb(105, 41, 124);
-        transition: 0.4s
-    } */
     .navSlide .fa-times{
         position: absolute;
         top: 22px;
@@ -181,13 +184,13 @@ header span{
 .steps{
     display: flex;
     justify-content: space-evenly;
-    margin: 5% 0;
+    margin-bottom: 5%;
 }
 
 .steps div h3{
     text-align: center;
     color: #d80000;
-    padding: 5px;
+    padding: 1rem;
     font-size: 2rem;
     font-family: 'Nunito', sans-serif;
 }
@@ -195,7 +198,7 @@ header span{
     height: 20em;
     width: 20em;
     overflow: hidden;
-    position: cover;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -222,35 +225,63 @@ header span{
 }
 
 /* Features */
-.features{
+.features {
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly; 
 }
-.features .text{
-    max-width: 30%;
-    margin-left: 25%;
+.features div{
+    max-width: 45%;
+}
+.features div .text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.features .list ol{
+    justify-content: flex-end;
 }
 
-.features ol {
-    margin-top: 10px;
-    margin-left: 20px;
-}
 
-.features .appImg{
+
+/*Phone Pics*/
+.phonePics{
+    margin-bottom: 5%; 
+}
+.phonePics .appImg{
     display: flex;
     justify-content: space-evenly;
     background-color: #D80000;
 }
-.features .appImg img{
+.phonePics .appImg img{
     max-width: 25%;
     padding: 2.5%;
     box-sizing: border-box;
-    border-radius: 3.5em;
+    border-radius: 2em;
+}
+
+/* Try It Out Button */
+.phonePics .tryItOut {
+    display: flex;
+    justify-content: center; 
+    align-items: baseline; 
+    background-color: #D80000;
+}
+.phonePics .tryItOut p{
+    color: #C6C6C6;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2em 0;
+    
 }
 
 @media screen and (max-width: 500px){
     .features{
         max-width: 95%;
         margin: 0 auto;
+        flex-direction: column;
+        margin-bottom: 10%;
     }
     .features .text{
         max-width: 90%;
@@ -261,7 +292,7 @@ header span{
         margin-left: 0;
         font-size: 18px;
     }
-    .features .appImg{
+    .phonePics .appImg{
         display: none;
         flex-direction: column;
     }
