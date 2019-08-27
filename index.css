@@ -433,7 +433,7 @@ body form{
     .aboutUs div{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
     }
 }
 
@@ -441,7 +441,15 @@ body form{
     height: 50%;
     margin-top: 10%;
 }
-
+.aboutUs div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutUs a .fa-arrow-right{
+    color: #C6C6C6;
+    font-size: 50px;
+    
+}
 
 
 /* Food Pics */
