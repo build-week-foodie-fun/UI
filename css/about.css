@@ -130,8 +130,13 @@ header span {
   background: #D80000;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   justify-self: center;
+  border-radius: 50%;
+}
+
+.team-profile-img img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .team-profile .team-role {
