@@ -46,7 +46,6 @@ header .navigation ul a:hover {
   font-size: 2rem;
   color: #D80000;
   font-weight: bold;
-  /* padding: 0 2em; */
 }
 
 header span {
@@ -61,18 +60,18 @@ header span {
       top: 0;
       padding-top: 5px;
   }
-header .webNav{
+  header .webNav{
       display: none;
   }
   header section{
       margin: 0;
   }
-header nav{
+  header nav{
   margin-left: 30%;
-      flex-direction: column;
-}
-nav .fas{
-  position: absolute;
+  flex-direction: column;
+  }
+  nav .fas{
+    position: absolute;
   }
   header span{
       display: initial;
@@ -90,7 +89,6 @@ nav .fas{
       padding-top: 60px;
       transition: 0.7s;
   }
-
   .navSlide a{
       display: block;
       padding: 20px 30px;
@@ -98,18 +96,12 @@ nav .fas{
       text-decoration: none;
       color: black;
   }
-
-  /* .slideMenu a:onClick{
-      color: rgb(105, 41, 124);
-      transition: 0.4s
-  } */
   .navSlide .fa-times{
       position: absolute;
       top: 22px;
       right: 22px;
       margin-left: 40px;
   }
-
   #slideContent span .slide a{
       color: black;
       font-size: 36px;
