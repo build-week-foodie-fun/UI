@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Foodie Fun</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script>
+    function openSlideMenu(){
+      document.getElementById('menu').style.width = '250px';
+      document.getElementById('content').style.marginLeft = '250px';
+    }
+  </script>
+
+    <script>
+        function closeSlideMenu(){
+          document.getElementById('menu').style.width = '0';
+          document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
+  
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header>  
+  <section class = "navigation">
+    <img src="images/Foodie_Icon.png"/>
+    <p>Foodie Fun</p>
+    <div class="webNav">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="#">Mission</a>
+            <a href="about.html">About</a>
+            <a href="SignUp.html">Sign Up</a>
+        </ul>
+    </div>
+  </section>
+
+    <section class=slideMenu">
+        <div id="slideContent">
+        <span class="slide">
+            <a href="#" onClick="openSlideMenu()">
+            <i class="fas fa-bars" ></i>
+            </a>
+        </span>
+
+        <span id="menu" class="navSlide">
+            <a href="#" onClick="closeSlideMenu()">
+            <i class="fas fa-times" ></i>
+            </a>
+            <a href="index.html">Home</a>
+            <a href="#">Mission</a>
+            <a href="about.html">About</a>
+            <a href="SignUp.html">Sign Up</a>
+        </span>
+        </div>
+    </section>
+</header>
+
+<!--  CONTENT -->
+
