@@ -152,6 +152,7 @@ header span {
 .team-profile-img img {
   width: 100%;
   border-radius: 50%;
+  filter: grayscale(40%);
 }
 
 .team-profile .team-role {
