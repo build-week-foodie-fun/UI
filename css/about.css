@@ -28,8 +28,14 @@ header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
   margin: 0 1em;
-  font-family: 'Montserrat', sans-serif;
   color: #7c7c7c;
+  transition: ease-out 0.2s;
+}
+
+header .navigation ul a:hover {
+  color: black;
+  transition: ease-in 0.2s;
+  text-shadow: 1px 1px 1px #ededed;
 }
 
 .navigation img {
@@ -126,6 +132,7 @@ header span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 2rem;
   border: 1px solid #7c7c7c;
   border-radius: 6px;
@@ -160,6 +167,12 @@ header span {
   font-size: 2.4rem;
   transition: ease-out 0.2s;
   color: black
+}
+
+@media (max-width: 500px) {
+  .github-link i {
+    font-size: 3.2rem;
+  }
 }
 
 .github-link i:hover {
