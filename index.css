@@ -95,16 +95,68 @@ header span{
 }
 
 @media screen and (max-width: 500px){
+    header{
+        position: fixed;
+        background: #fff;
+        width: 100%
+    }
 	header .webNav{
 		display: none;
 	}
 	header nav{
 		margin-left: 30%;
-		flex-direction: column;
+        flex-direction: column;
+
 	}
 	nav .fas{
-		position: absolute
-	}
+		position: absolute;
+    }
+    header span{
+        display: initial;
+    }
+    .navSlide{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: .9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.7s;
+    }
+
+    .navSlide a{
+        display: block;
+        padding: 20px 30px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* .slideMenu a:onClick{
+        color: rgb(105, 41, 124);
+        transition: 0.4s
+    } */
+    .navSlide .fa-times{
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        margin-left: 40px;
+    }
+
+    #slideContent span .slide a{
+        color: black;
+        font-size: 36px;
+    }
+    #slideContent{
+        padding: 20px;
+        transition: margin-left 0.7s;
+        overflow: hidden;
+        width: 100%
+    }
 }
 
 /* Login */
@@ -177,8 +229,10 @@ body form{
 
 @media screen and (max-width: 500px){
     body form{
+        margin-top: 140px;/*get to 50px*/
         background: #fff;
         text-align: center;
+        align-items: center;
     }
 
     body .loginBox{
@@ -186,6 +240,10 @@ body form{
     }
     .loginBox img{
         display: none;
+    }
+
+    .loginBox form{
+        align-self: center;
     }
 
     /* header span{
@@ -234,14 +292,14 @@ body form{
 .explore div{
     padding: 5px;
     align-content: center;
-    max-width: 40%;
+    /* max-width: 40%; */
 }
 
 .explore div img{
     width: 100%;
 }
-.explore div .div1{
-    width: 30%;
+.explore .div1{
+    max-width: 30%;
 }
 
 
@@ -255,10 +313,11 @@ body form{
 .howItWorks{
     display: flex;
     flex-direction: row-reverse;
+    height: 50%;
     margin-top: 10% auto;
     -webkit-box-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #D80000;
 }
 
@@ -272,14 +331,16 @@ body form{
 
 .howItWorks .div4{
     justify-content: space-between;
-    margin: 15px;
-    width: 40%;
+    align-items: center;
+    margin: 5% 0;
+    /* width: 40%; */
     /* box-sizing: border-box; */ 
 }
 
 .howItWorks div img{
-    height: 450px;
-    justify-content: space-evenly;
+    height: 30em;
+    /* padding: 2em; */
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 500px){
@@ -294,6 +355,9 @@ body form{
         max-width: 95%;
         margin-top: 10%;
     }
+    .explore .div1{
+        max-width: 95%;
+    }
     .howItWorks div .screenShot2, .screenShot3{
         display: none;
     }
@@ -304,6 +368,11 @@ body form{
     .howItWorks div{
         justify-content: center;
     }
+}
+
+.aboutUs {
+    height: 50%;
+    margin-top: 10%;
 }
 
 
@@ -346,4 +415,5 @@ footer{
 footer p{
     text-align: center;
     padding: 2em;
+    color: #C6C6C6;
 }

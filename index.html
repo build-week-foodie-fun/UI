@@ -17,6 +17,13 @@
       document.getElementById('content').style.marginLeft = '250px';
     }
   </script>
+
+    <script>
+        function closeSlideMenu(){
+          document.getElementById('menu').style.width = '0';
+          document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
   
 
   <!--[if lt IE 9]>
@@ -33,30 +40,30 @@
         <ul>
             <a href="index.html">Home</a>
             <a href="#">Mission</a>
-            <a href="#">About</a>
+            <a href="about.html">About</a>
             <a href="SignUp.html">Sign Up</a>
         </ul>
     </div>
   </section>
 
     <section class=slideMenu">
-    <div id="slideContent">
-      <span class="slide">
-        <a href="#" onClick="openSlideMenu()">
-          <i class="fas fa-bars" ></i>
-        </a>
-      </span>
+        <div id="slideContent">
+        <span class="slide">
+            <a href="#" onClick="openSlideMenu()">
+            <i class="fas fa-bars" ></i>
+            </a>
+        </span>
 
-      <span id="menu" class="navSlide">
-        <a href="#" onClick="closeSlideMenu()">
-          <i class="fas fa-times" ></i>
-        </a>
-        <a href="index.html">Home</a>
-        <a href="#">Mission</a>
-        <a href="#">About</a>
-        <a href="#">Sign Up</a>
-      </span>
-    </div>
+        <span id="menu" class="navSlide">
+            <a href="#" onClick="closeSlideMenu()">
+            <i class="fas fa-times" ></i>
+            </a>
+            <a href="index.html">Home</a>
+            <a href="#">Mission</a>
+            <a href="about.html">About</a>
+            <a href="SignUp.html">Sign Up</a>
+        </span>
+        </div>
     </section>
 </header>
 
@@ -99,23 +106,25 @@
                 <img src="images/Foodie App Prototype/Price Input.png" class="screenShot3"/>
             </div>
         </section><!--closes howItWorks-->
-
-    <!-- <section class="foodCategories">     -->
-        <!-- <div class="foodPics">
-            <img src="images/sushi.jpg" class="box1"/>
-            <img src="images/breakfast.jpg" class="box2"/>
-            <img src="images/burger.jpg" class="box3"/>
-            <img src="images/pasta.jpg" class="box4"/>
-            <img src="images/vegan.jpg" class="box5"/>
-            <img src="images/donuts.jpg" class="box6"/>
-        </div> -->
-    <!-- </section>closes food categories -->
+        <section class="aboutUs">    
+                <div class="div5">
+                    <h2>Get To Know Us</h2>
+                    <p>Meet the team that developed this amazing product!
+                    </p>
+                </div>
+                <!-- <div class="div6">
+                    <img src="images/Foodie App Prototype/Home Page.png" class="screenShot1"/>
+                    <img src="images/Foodie App Prototype/Filter Dropdown.png" class="screenShot2"/>
+                    <img src="images/Foodie App Prototype/Price Input.png" class="screenShot3"/>
+                </div> -->
+            </section><!--closes aboutUs-->
+    
 
 </section><!--closes content-->
 
 </body>
 <footer>
-    <p>All Rights Reserved 2019</p>
+    <p>© Foodie Fun 2019</p>
 </footer>
 </html>
 
