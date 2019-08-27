@@ -75,6 +75,7 @@ header span {
   max-width: 50%;
   margin: 2rem 0;
   padding: 0 4rem;
+  line-height: 1.4;
 }
 
 @media (max-width: 500px) {
@@ -159,11 +160,11 @@ header span {
 
 .team-profile .team-role {
   padding: 2rem 0;
+  text-align: center;
 }
 
 .team-role ul li {
   padding: 1rem 0;
-  list-style: disc;
 }
 
 .github-link {
