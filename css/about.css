@@ -247,7 +247,8 @@ header span {
   padding: 2rem;
   border: 1px solid #7c7c7c;
   border-radius: 6px;
-  background: #ededed;
+  background: #f7f3f3;
+  color: #6e6e6e;
   box-shadow: 2px 2px 2px #ededed;
   margin: 1rem;
 }
