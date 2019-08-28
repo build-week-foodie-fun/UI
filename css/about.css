@@ -20,6 +20,9 @@ header .webNav {
 /* Navigation */
 header .navLogo p{
   font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #D80000;
+  font-weight: 500;
 }
 
 header .navigation div {
@@ -57,12 +60,6 @@ header .navigation ul a:hover {
 
 .navigation img {
   height: 60px;
-}
-
-.navigation p {
-  font-size: 2rem;
-  color: #D80000;
-  font-weight: bold;
 }
 
 header span {
