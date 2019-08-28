@@ -207,6 +207,7 @@ body .banner h1 {
 
 .explore div img {
   width: 100%;
+  box-shadow: 2px 1px 2px #c0bebe;
 }
 
 .explore .div1 {
@@ -336,5 +337,5 @@ footer {
 footer p {
   text-align: center;
   padding: 2em;
-  color: #C6C6C6;
+  color: #ededed;
 }
