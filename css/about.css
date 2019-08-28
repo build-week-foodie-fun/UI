@@ -62,7 +62,7 @@ header .navigation ul a:hover {
 .navigation p {
   font-size: 2rem;
   color: #D80000;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 header span {
@@ -276,6 +276,7 @@ header span {
   height: 200px;
   justify-self: center;
   border-radius: 50%;
+  box-shadow: 2px 2px 2px #a7a6a6;
 }
 
 .team-profile-img img {

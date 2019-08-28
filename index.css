@@ -180,6 +180,7 @@ body .banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: grayscale(25%);
 }
 
 body .banner h1 {
@@ -203,8 +204,10 @@ body .banner h1 {
 
   body section.banner h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 20px;
+    width: 65%;
+
   }
 }
 
@@ -311,6 +314,13 @@ body .banner h1 {
   border-radius: 1em;
 }
 
+@media screen and (max-width: 1000px) {
+  .howItWorks div .screenShot2,
+  .screenShot3 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .content {
     width: 100%;
@@ -335,11 +345,6 @@ body .banner h1 {
 
   .explore .div1 {
     max-width: 95%;
-  }
-
-  .howItWorks div .screenShot2,
-  .screenShot3 {
-    display: none;
   }
 
   .howItWorks div .screenShot1 {
