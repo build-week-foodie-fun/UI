@@ -3,13 +3,12 @@ html {
 }
 
 /* Header */
+
 header section {
   margin: 1em auto;
   display: flex;
   align-items: baseline;
   justify-content: center;
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 2rem;
 }
 
 header .webNav {
@@ -18,18 +17,23 @@ header .webNav {
   justify-content: flex-end;
 }
 
+
 /* Navigation */
+
 header .navigation {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 2rem;
 }
 
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
-  margin: 0 1em;
+  padding: 0 1em;
   color: #7c7c7c;
   transition: ease-out 0.2s;
+  font-size: 1.2rem;
 }
 
 header .navigation ul a:hover {
@@ -45,76 +49,118 @@ header .navigation ul a:hover {
 .navigation p {
   font-size: 2rem;
   color: #D80000;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-header .slideMenu {
+header span {
   display: none;
 }
 
-@media screen and (max-width: 500px){
-  header{
-      position: fixed;
-      background: #fff;
-      width: 100%;
-      top: 0;
-      padding-top: 5px;
+@media screen and (max-width: 500px) {
+  header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    padding-top: 5px;
+    z-index: 10;
+    display: flex;
   }
-  header .webNav{
-      display: none;
+
+  header .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
   }
-  header section{
-      margin: 0;
+
+  header .webNav {
+    display: none;
   }
-  header nav{
-  margin-left: 30%;
-  flex-direction: column;
+
+  header section {
+    margin: 0;
   }
-  nav .fas{
+
+  header nav {
+    margin-left: 30%;
+    flex-direction: column;
+  }
+
+  nav .fas {
     position: absolute;
   }
-  header span{
-      display: initial;
+
+  header span {
+    display: initial;
   }
-  .navSlide{
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #fff;
-      opacity: .9;
-      overflow-x: hidden;
-      padding-top: 60px;
-      transition: 0.7s;
+
+  .navSlide {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
   }
-  .navSlide a{
-      display: block;
-      padding: 20px 30px;
-      font-size: 25px;
-      text-decoration: none;
-      color: black;
+
+  .navSlide a {
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
   }
-  .navSlide .fa-times{
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      margin-left: 40px;
+
+  .navSlide .model-list {
+    margin-top: 3rem;
+    padding: 0 3rem;
   }
-  #slideContent span .slide a{
-      color: black;
-      font-size: 36px;
+
+  .navSlide .fa-times {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    margin-left: 40px;
   }
-  #slideContent{
-      padding: 20px;
-      transition: margin-left 0.7s;
-      overflow: hidden;
-      width: 100%
+
+  #slideContent span .slide a {
+    color: black;
+    font-size: 36px;
+  }
+
+  #slideContent {
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  #slideContent a {
+    font-size: 2rem;
+    color: #7c7c7c;
+    transition: ease-out 0.2s;
+  }
+
+  #slideContent a:hover {
+    color: black;
+    transition: ease-in 0.2s;
   }
 }
 
 /* About */
+
+.about-us {
+  border-bottom: 1px solid #ededed;
+}
 .about-info {
   display: flex;
   flex-direction: column;
@@ -126,9 +172,13 @@ header .slideMenu {
 }
 
 @media (max-width: 500px) {
+  .about-us {
+    padding-top: 10rem;
+    text-align: center;
+  }
   .about-info {
     max-width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     margin: 0 auto;
     align-items: center;
   }
@@ -138,20 +188,27 @@ header .slideMenu {
   font-size: 2rem;
   padding: 1rem 0;
   align-items: center;
+  color: #D80000;
+}
+
+.about-info p {
+  color: #7c7c7c;
+  font-size: 1.2rem;
 }
 
 .meet-the-team {
   display: flex;
   flex-direction: column;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 500px) {
   .meet-the-team {
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
+
   .title {
     text-align: center;
   }
@@ -160,6 +217,7 @@ header .slideMenu {
 .meet-the-team .title {
   font-size: 2rem;
   padding: 1rem 0;
+  color: #D80000;
 }
 
 .team-profiles {
@@ -173,8 +231,9 @@ header .slideMenu {
     justify-content: center;
     font-size: 1.6rem;
   }
+
   .team-profile {
-    width: 100%;    
+    width: 100%;
     align-items: center;
   }
 }
@@ -188,13 +247,13 @@ header .slideMenu {
   padding: 2rem;
   border: 1px solid #7c7c7c;
   border-radius: 6px;
-  background: #ededed;
+  background: #f7f3f3;
+  color: #6e6e6e;
   box-shadow: 2px 2px 2px #ededed;
   margin: 1rem;
 }
 
 .team-profile-img {
-  background: #D80000;
   width: 200px;
   height: 200px;
   justify-self: center;
@@ -237,4 +296,18 @@ header .slideMenu {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.2s;
+}
+
+/* Footer */
+footer {
+  background-color: #D80000;
+  height: 20%;
+  margin-top: 5em;
+}
+
+footer p {
+  text-align: center;
+  padding: 2em;
+  color: #ededed;
+  font-size: 1.1rem;
 }
