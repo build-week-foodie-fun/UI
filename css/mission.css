@@ -23,6 +23,8 @@ header .webNav {
 header .navigation {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 2rem;
 }
 
 header .navigation ul a {
@@ -71,7 +73,7 @@ header span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1.2rem;
+    padding: 2rem 0;
     border-bottom: 1px solid #ededed;
   }
 
@@ -170,6 +172,10 @@ header span {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5%;
+}
+
+.steps div img {
+  box-shadow: 2px 3px 2px #a19f9f;
 }
 
 .steps div h3 {
