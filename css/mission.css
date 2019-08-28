@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Header */
+
+header section{
+	margin: 1em auto;
+	display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+header .webNav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+
+/* Navigation */
+
+header .navigation {
+	display: flex;
+	justify-content: center;
+}
+
+header .navigation ul a{ 
+	justify-content: space-between;
+	text-decoration: none;
+    padding: 0 1em;
+    color: #7c7c7c;
+    transition: ease-out 0.2s;
+}
+
+header .navigation ul a:hover {
+    color: black;
+    transition: ease-in 0.2s;
+    text-shadow: 1px 1px 1px #ededed;
+}
+
+.navigation img{
+    height: 60px;
+}
+
+.navigation p{
+    font-size: 2rem;
+    color: #D80000;
+    font-weight: bold;
+}
+
+header span{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    header{
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        top: 0;
+        padding-top: 5px;
+    }
+	header .webNav{
+        display: none;
+    }
+    header section{
+        margin: 0;
+    }
+	header nav{
+		margin-left: 30%;
+        flex-direction: column;
+	}
+	nav .fas{
+		position: absolute;
+    }
+    header span{
+        display: initial;
+    }
+    .navSlide{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: .9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.7s;
+    }
+
+    .navSlide a{
+        display: block;
+        padding: 20px 30px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navSlide .fa-times{
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        margin-left: 40px;
+    }
+
+    #slideContent span .slide a{
+        color: black;
+        font-size: 36px;
+    }
+    #slideContent{
+        padding: 20px;
+        transition: margin-left 0.7s;
+        overflow: hidden;
+        width: 100%
+    }
+}
+
+
+                                /* CONTENT */
+.content{
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 25px;
+    color: #D80000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Steps */
+.steps{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.steps div h3{
+    text-align: center;
+    color: #d80000;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.steps div img{
+    height: 20em;
+    width: 20em;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 500px){
+    body .content{
+        /* width: 90%; */
+        margin: 0;
+    }
+    body .content p{
+        font-size: 18px;
+    }
+    .steps{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .steps div{
+        margin: 0 auto;
+    }
+    .steps div img{
+        height: 10em;
+        width: 10em;
+    }
+}
+
+/* Features */
+.features {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.features div{
+    max-width: 45%;
+}
+.features div .text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.features .list ol{
+    justify-content: flex-end;
+}
+
+
+
+/*Phone Pics*/
+.phonePics{
+    margin-bottom: 5%; 
+}
+.phonePics .appImg{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #D80000;
+}
+.phonePics .appImg img{
+    max-width: 25%;
+    padding: 2.5%;
+    box-sizing: border-box;
+    border-radius: 2em;
+}
+
+/* Try It Out Button */
+.phonePics .tryItOut {
+    display: flex;
+    justify-content: center; 
+    align-items: baseline; 
+    background-color: #D80000;
+}
+.phonePics .tryItOut p{
+    color: #C6C6C6;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2em 0;
+    
+}
+
+@media screen and (max-width: 500px){
+    .features{
+        max-width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .features .text{
+        max-width: 90%;
+        margin: 0;
+        justify-content: center;
+    }
+    .features ol{
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .phonePics .appImg{
+        display: none;
+        flex-direction: column;
+    }
+}
+
+/* Get Started */
+.getStarted{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.getStarted div{
+    max-width: 30%;
+}
+
+
+.getStarted div.button a button {
+    /* max-width: 50%; */
+    margin: 0 auto;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background: #d80000;
+    color: #ededed;
+    outline: none; 
+    border-radius: .6rem;
+    box-shadow: 2px 2px 2px #d8d5d5;
+    transition: ease-out 0.2s;
+  }
+  
+  .getStarted div.button a button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+  }
+
+  @media screen and (max-width: 500px){
+      .getStarted{
+          flex-direction: column;
+          /* margin-top: 5%; */
+      }
+      .getStarted div{
+          max-width: 90%;
+          display: flex;
+          justify-content: center;
+      }
+      .getStarted .text2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 0; 
+        margin: 0 auto;
+      }
+      .getStarted div.button{
+          margin: 0 auto;
+      }
+  }
+
+  /* Footer */
+  footer{
+    background-color: #D80000;
+    height: 20%;
+    margin-top: 5em;
+}
+
+footer p{
+    text-align: center;
+    padding: 2em;
+    color: #C6C6C6;
+}

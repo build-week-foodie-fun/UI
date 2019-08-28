@@ -46,6 +46,7 @@ header .navigation ul a:hover {
   font-size: 2rem;
   color: #D80000;
   font-weight: bold;
+<<<<<<< HEAD
   /* padding: 0 2em; */
 }
 
@@ -65,6 +66,73 @@ header span {
 
   nav .fas {
     position: absolute
+=======
+}
+
+header .slideMenu {
+  display: none;
+}
+
+@media screen and (max-width: 500px){
+  header{
+      position: fixed;
+      background: #fff;
+      width: 100%;
+      top: 0;
+      padding-top: 5px;
+  }
+  header .webNav{
+      display: none;
+  }
+  header section{
+      margin: 0;
+  }
+  header nav{
+  margin-left: 30%;
+  flex-direction: column;
+  }
+  nav .fas{
+    position: absolute;
+  }
+  header span{
+      display: initial;
+  }
+  .navSlide{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      opacity: .9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.7s;
+  }
+  .navSlide a{
+      display: block;
+      padding: 20px 30px;
+      font-size: 25px;
+      text-decoration: none;
+      color: black;
+  }
+  .navSlide .fa-times{
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      margin-left: 40px;
+  }
+  #slideContent span .slide a{
+      color: black;
+      font-size: 36px;
+  }
+  #slideContent{
+      padding: 20px;
+      transition: margin-left 0.7s;
+      overflow: hidden;
+      width: 100%
+>>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
   }
 }
 
@@ -148,11 +216,18 @@ header span {
 }
 
 .team-profile-img {
+<<<<<<< HEAD
+=======
+  background: #D80000;
+>>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
   width: 200px;
   height: 200px;
   justify-self: center;
   border-radius: 50%;
+<<<<<<< HEAD
   box-shadow: 1px 1px 1px #969595;
+=======
+>>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
 }
 
 .team-profile-img img {
@@ -191,5 +266,9 @@ header span {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.2s;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
