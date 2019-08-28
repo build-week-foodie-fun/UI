@@ -172,12 +172,14 @@ header span {
 /* Banner */
 
 body .banner {
+  margin: 0 auto;
+  width: 95%;
   height: 55rem;
-  max-width: 100%;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
+  filter: grayscale(90%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,8 +238,12 @@ body .banner {
 
 body .banner h1 {
   font-size: 60px;
+  width: 50%;
+  margin-left: 5%;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black;
   padding: 15px;
-  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -303,6 +309,7 @@ body .banner h1 {
 
 .explore .div1 {
   max-width: 30%;
+  text-align: left;
   flex-direction: column;
 }
 
@@ -318,6 +325,8 @@ body .banner h1 {
   padding: 5px;
   align-content: center;
   display: flex;
+  max-width: 50%;
+  justify-content: space-between;
 }
 
 .howItWorks {
@@ -336,12 +345,12 @@ body .banner h1 {
 }
 
 .howItWorks .div3 h2 {
-  color: #ededed;
+  color: #fff;
 }
 
 .howItWorks .div3 p {
   line-height: 1.4;
-  color: #c6c6c6;
+  color: #fff;
 }
 
 .howItWorks .div4 {
@@ -353,10 +362,7 @@ body .banner h1 {
 
 .howItWorks div img {
     max-width: 25%;
-  /* max-height: 30em; */
-  /* padding: 2em; */
-  /* justify-content: space-between; */
-  border-radius: 1em;
+    border-radius: 1em;
 }
 
 @media screen and (max-width: 1000px) {
@@ -412,11 +418,14 @@ body .banner h1 {
 .aboutUs {
   height: 60%;
   margin-top: 1.75em;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutUs div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .aboutUs .div5 h2{
@@ -431,7 +440,7 @@ body .banner h1 {
 
 .aboutUs a {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 1.5em;
 }
 
