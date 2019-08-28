@@ -46,27 +46,6 @@ header .navigation ul a:hover {
   font-size: 2rem;
   color: #D80000;
   font-weight: bold;
-<<<<<<< HEAD
-  /* padding: 0 2em; */
-}
-
-header span {
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-  header nav {
-    display: none;
-  }
-
-  header nav {
-    margin-left: 30%;
-    flex-direction: column;
-  }
-
-  nav .fas {
-    position: absolute
-=======
 }
 
 header .slideMenu {
@@ -132,7 +111,6 @@ header .slideMenu {
       transition: margin-left 0.7s;
       overflow: hidden;
       width: 100%
->>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
   }
 }
 
@@ -216,18 +194,11 @@ header .slideMenu {
 }
 
 .team-profile-img {
-<<<<<<< HEAD
-=======
   background: #D80000;
->>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
   width: 200px;
   height: 200px;
   justify-self: center;
   border-radius: 50%;
-<<<<<<< HEAD
-  box-shadow: 1px 1px 1px #969595;
-=======
->>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
 }
 
 .team-profile-img img {
@@ -266,9 +237,4 @@ header .slideMenu {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.2s;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 30ea9fa8eccdb076221eb1a7c749719405e23f11
