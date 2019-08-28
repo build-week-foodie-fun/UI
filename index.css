@@ -173,7 +173,7 @@ header span {
 
 body .banner {
   height: 70%;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
