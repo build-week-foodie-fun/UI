@@ -17,6 +17,7 @@ header .webNav {
   justify-content: flex-end;
 }
 
+
 /* Navigation */
 
 header .navigation {
@@ -61,6 +62,18 @@ header span {
     width: 100%;
     top: 0;
     padding-top: 5px;
+    z-index: 10;
+    display: flex;
+  }
+
+  header .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem;
+    border-bottom: 1px solid #ededed;
   }
 
   header .webNav {
@@ -122,7 +135,20 @@ header span {
     padding: 20px;
     transition: margin-left 0.7s;
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  #slideContent a {
+    font-size: 2rem;
+    color: #7c7c7c;
+    transition: ease-out 0.2s;
+  }
+
+  #slideContent a:hover {
+    color: black;
+    transition: ease-in 0.2s;
   }
 }
 
