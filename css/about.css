@@ -14,6 +14,7 @@ header .webNav {
   display: flex;
   width: 40%;
   justify-content: flex-end;
+  padding: 0 1rem;
 }
 
 
@@ -44,16 +45,16 @@ header .navigation div .navLogo{
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
-  padding: 0 1em;
+  padding: 0 1rem;
   color: #7c7c7c;
   transition: ease-out 0.2s;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 header .navigation ul a:hover {
-  color: black;
-  padding-bottom: .5em;
-  border-bottom: 1px solid black;
+  color: #D80000;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #D80000;
   transition: ease-in 0.2s;
   text-shadow: 1px 1px 1px #ededed;
 }
