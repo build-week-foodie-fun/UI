@@ -49,7 +49,7 @@ header .navigation ul a:hover {
 .navigation p {
   font-size: 2rem;
   color: #D80000;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 header span {
