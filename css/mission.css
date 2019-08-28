@@ -273,6 +273,12 @@ header span {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: #D80000;
+}
+.features h1{
+  font-size: 2rem;
+  color: white;
+  padding: 2em 0;
 }
 
 .features div {
@@ -290,12 +296,13 @@ header span {
   flex-direction: column;
   text-align: center;
   padding: 1em;
-  border: 1px solid #7c7c7c;
+  /* border: 1px solid #7c7c7c; */
   border-radius: 1em;
+  background: white;
 }
 
 .features .list div:hover{
-  box-shadow: 0px 3px 1px #d8d5d5;
+  box-shadow: 2px 3px 5px #7c7c7c;
   transition: ease-out 0.1s;
 }
 
@@ -321,10 +328,6 @@ header span {
     margin: 0 auto;
 }
 
-.features h1{
-  font-size: 2rem;
-}
-
 /*Phone Pics*/
 .phonePics {
   margin-bottom: 2em;
@@ -333,7 +336,7 @@ header span {
 .phonePics .appImg {
   display: flex;
   justify-content: space-evenly;
-  background-color: #D80000;
+  /* background-color: #D80000; */
 }
 
 .phonePics .appImg img {
@@ -348,7 +351,7 @@ header span {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  background-color: #D80000;
+  /* background-color: #D80000; */
 }
 
 .tryItOut a {
@@ -356,7 +359,7 @@ header span {
 }
 
 .phonePics .tryItOut p {
-  color: #ededed;
+  color: #7c7c7c;
   font-size: 25px;
   font-weight: bold;
   padding: 2em 0;
@@ -403,7 +406,13 @@ header span {
 .getStarted {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  /* flex-direction: column; */
   margin-bottom: 5%;
+}
+.getStarted h1{
+  font-size: 2rem;
 }
 
 .getStarted div {
