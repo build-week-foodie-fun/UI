@@ -172,28 +172,72 @@ header span {
 /* Banner */
 
 body .banner {
-  height: 70%;
+  height: 55rem;
   max-width: 100%;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding-left: 4rem;
-  filter: grayscale(60%);
+}
+
+.banner-heading {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px #a3a2a2;
+  margin-bottom: 1rem;
+}
+
+.banner .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.banner .buttons button {
+  width: 45%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: .6rem;
+  background: #D80000;
+  border: none;
+  box-shadow: 2px 1px 1px #797777;
+  color: #ededed;
+  outline: none;
+  transition: ease-out 0.2s;
+}
+
+.banner .buttons button:nth-child(1) {
+  background: #fff;
+  color: #D80000;
+}
+
+.banner .buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
+}
+
+.banner .buttons button:nth-child(1):hover {
+  color: #fff;
+  background: #D80000;
+}
+
+.banner .buttons button:nth-child(2):hover {
+  background: #fff;
+  color: #D80000;
 }
 
 body .banner h1 {
-  font-size: 80px;
-  width: 50%;
-  background-color: #fff;
+  font-size: 60px;
   padding: 15px;
-  margin: 20% 0;
   text-align: center;
-  border-radius: 20px;
-  box-shadow: 2px 1px 2px #a3a2a2;
 }
 
 @media screen and (max-width: 500px) {
