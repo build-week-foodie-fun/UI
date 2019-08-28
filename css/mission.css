@@ -177,6 +177,8 @@ header span {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5%;
+  border-bottom: 1px solid #ededed;  
+  padding-bottom: 3rem;
 }
 
 .steps div img {
@@ -211,6 +213,7 @@ header span {
   .steps {
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 1rem;
   }
 
   .steps div {
@@ -301,7 +304,6 @@ header span {
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
-    border-top: 1px solid #ededed;
     padding-top: 2rem;
     max-width: 90%;
   }
@@ -313,7 +315,7 @@ header span {
     line-height: 1.4;
     text-align: center;
     border-bottom: 1px solid #ededed;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 
   .features .list {
