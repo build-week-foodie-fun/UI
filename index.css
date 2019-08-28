@@ -179,15 +179,16 @@ body .banner {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  filter: grayscale(25%);
+  padding-left: 4rem;
+  filter: grayscale(60%);
 }
 
 body .banner h1 {
   font-size: 80px;
   width: 50%;
-  background-color: #ededed;
+  background-color: #fff;
   padding: 15px;
   margin: 20% 0;
   text-align: center;
@@ -258,7 +259,6 @@ body .banner h1 {
 
 .explore .div1 {
   max-width: 30%;
-  text-align: right;
   flex-direction: column;
 }
 
