@@ -7,22 +7,26 @@ html {
 header section {
   margin: 1em auto;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  justify-content: space-between; 
 }
 
 header .webNav {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: flex-end;
 }
 
 
 /* Navigation */
 
-header .navigation {
+header .navLogo p{
+    font-family: 'Nunito', sans-serif;
+}
+
+header .navigation div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 header .navigation ul a {
@@ -31,11 +35,13 @@ header .navigation ul a {
   padding: 0 1em;
   color: #7c7c7c;
   transition: ease-out 0.2s;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 header .navigation ul a:hover {
   color: black;
+  padding-bottom: .5em;
+  border-bottom: 1px solid black;
   transition: ease-in 0.2s;
   text-shadow: 1px 1px 1px #ededed;
 }
@@ -163,7 +169,7 @@ body .banner {
   height: 70%;
   width: 100%;
   object-fit: cover;
-  background: url("images/peopleEating.jpg");
+  background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -205,13 +211,10 @@ body .banner h1 {
   display: flex;
   flex-direction: column;
   padding-top: 5%;
-  /* -webkit-box-align: center;
-    align-items: center;
-    justify-content: center; */
 }
 
 .content h2 {
-  font-size: 25px;
+  font-size: 32px;
   color: #D80000;
   font-weight: bold;
   padding-bottom: 10px;
@@ -225,16 +228,18 @@ body .banner h1 {
 
 .explore {
   margin-bottom: 5%;
+  margin-left: 5%;
+  max-width: 90%;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.explore div {
-  padding: 5px;
-  align-content: center;
-  /* max-width: 40%; */
+.explore div{
+  display: flex;
+  margin: 10px 0;
+  max-width: 50%;
+  justify-content: space-evenly;
 }
 
 .explore div img {
@@ -244,6 +249,8 @@ body .banner h1 {
 
 .explore .div1 {
   max-width: 30%;
+  text-align: right;
+  flex-direction: column;
 }
 
 .div1 p {
@@ -251,11 +258,13 @@ body .banner h1 {
   color: #7c7c7c;
 }
 
+
 /*How it Works*/
 
 .howItWorks div {
   padding: 5px;
   align-content: center;
+  display: flex;
 }
 
 .howItWorks {
@@ -263,7 +272,6 @@ body .banner h1 {
   flex-direction: row-reverse;
   height: 50%;
   margin-top: 10% auto;
-  -webkit-box-align: center;
   align-items: center;
   justify-content: space-evenly;
   background-color: #D80000;
@@ -271,6 +279,7 @@ body .banner h1 {
 
 .howItWorks .div3 {
   max-width: 30%;
+  flex-direction: column;
 }
 
 .howItWorks .div3 h2 {
@@ -284,16 +293,16 @@ body .banner h1 {
 
 .howItWorks .div4 {
   justify-content: space-between;
-  align-items: center;
-  margin: 5% 0;
-  /* width: 40%; */
-  /* box-sizing: border-box; */
+  margin: 5%;
+  width: 70%; 
+  box-sizing: border-box; 
 }
 
 .howItWorks div img {
-  height: 30em;
+    max-width: 25%;
+  /* max-height: 30em; */
   /* padding: 2em; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-radius: 1em;
 }
 
@@ -346,32 +355,45 @@ body .banner h1 {
 }
 
 .aboutUs {
-  height: 50%;
-  margin-top: 10%;
+  height: 60%;
+  margin-top: 1.75em;
 }
 
 .aboutUs div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.aboutUs .div5 p {
+.aboutUs .div5 h2{
   color: #7c7c7c;
+  font-size: 16px;
+  padding-right: 15px;
 }
+.aboutUs .div5 p{
+    color: #7c7c7c;
+    font-size: 16px;
+  }
 
 .aboutUs a {
   display: flex;
   justify-content: flex-end;
+  padding-top: 1.5em;
 }
 
 .aboutUs a .fa-arrow-right {
-  color: #C6C6C6;
-  font-size: 50px;
+  color: #7c7c7c;
+  font-size: 30px;
+  border: 1px solid #C6C6C6;
+  border-radius: 20%;
+  padding: 5px 10px;
+}
+.aboutUs a .fa-arrow-right:hover{
+    color: #C6C6C6;
+    box-shadow: 0px 1px 2px 1px #c0bebe;
 }
 
 
 /* Footer */
-
 
 footer {
   background-color: #D80000;

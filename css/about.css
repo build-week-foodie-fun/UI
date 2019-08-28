@@ -7,37 +7,50 @@ html {
 header section {
   margin: 1em auto;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header .webNav {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: flex-end;
 }
 
 
 /* Navigation */
+header .navLogo p{
+  font-family: 'Nunito', sans-serif;
+}
 
-header .navigation {
+header .navigation div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+header .navigation{
   border-bottom: 1px solid #ededed;
   padding-bottom: 2rem;
 }
 
+header .navigation div .navLogo{
+  display: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
   padding: 0 1em;
   color: #7c7c7c;
   transition: ease-out 0.2s;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 header .navigation ul a:hover {
   color: black;
+  padding-bottom: .5em;
+  border-bottom: 1px solid black;
   transition: ease-in 0.2s;
   text-shadow: 1px 1px 1px #ededed;
 }
