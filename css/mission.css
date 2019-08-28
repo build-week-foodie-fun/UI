@@ -3,7 +3,6 @@ html {
 }
 
 /* Header */
-
 header section {
   margin: 1em auto;
   display: flex;
@@ -195,8 +194,8 @@ header span {
 
 /* HEAD */
 .steps div img{
-    height: 20em;
-    width: 20em;
+    height: 15em;
+    width: 15em;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -221,14 +220,17 @@ header span {
         height: 10em;
         width: 10em;
     }
-/* ======= */
+}
+
+    /* ======= */
 
 .steps div h3 {
   text-align: center;
   color: #d80000;
   padding: 1rem;
-  font-size: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .steps div img {
@@ -267,46 +269,43 @@ header span {
 
 /* Features */
 .features {
+  padding-bottom: 5%;
   margin-bottom: 5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #7c7c7c;
 }
 
 .features div {
-  max-width: 45%;
+  justify-content: center;
+  text-align: center;
 }
 
 .features div .text {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
 }
-.features .list ol{
-    justify-content: flex-end;
-    flex-direction: row;
+.features .list p{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #7c7c7c;
+    display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.features .text p {
+/* .features .text p {
   font-size: 1.2rem;
   color: #7c7c7c;
-}
-
-.features .list ol {
-  justify-content: flex-end;
-  list-style: disc;
-  border-bottom: 1px solid #7c7c7c;
-}
-
-.list ol li {
-  padding: .5rem 0;
-  font-size: 1.2rem;
-  color: #7c7c7c;
-}
+} */
 
 /*Phone Pics*/
 .phonePics {
-  margin-bottom: 5%;
+  margin-bottom: 2em;
 }
 
 .phonePics .appImg {
@@ -398,7 +397,7 @@ header span {
 
 .getStarted div.button a button {
   margin: 0 auto;
-  padding: 1.6rem;
+  padding: 1.2rem;
   font-size: 1.6rem;
   background: #d80000;
   color: #ededed;
@@ -449,5 +448,5 @@ footer p {
   text-align: center;
   padding: 2em;
   color: #ededed;
-  font-size: 1.1rem}
+  font-size: 1.1rem
 }
