@@ -248,6 +248,7 @@ body .banner h1 {
 
 .div1 p {
   line-height: 1.4;
+  color: #7c7c7c;
 }
 
 /*How it Works*/
@@ -273,7 +274,12 @@ body .banner h1 {
 }
 
 .howItWorks .div3 h2 {
-  color: white;
+  color: #ededed;
+}
+
+.howItWorks .div3 p {
+  line-height: 1.4;
+  color: #c6c6c6;
 }
 
 .howItWorks .div4 {
@@ -347,6 +353,10 @@ body .banner h1 {
 .aboutUs div {
   display: flex;
   justify-content: space-evenly;
+}
+
+.aboutUs .div5 p {
+  color: #7c7c7c;
 }
 
 .aboutUs a {

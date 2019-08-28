@@ -243,6 +243,7 @@ header span {
 
 .features .text p {
   font-size: 1.2rem;
+  color: #7c7c7c;
 }
 
 .features .list ol {
@@ -253,6 +254,7 @@ header span {
 .list ol li {
   padding: .5rem 0;
   font-size: 1.2rem;
+  color: #7c7c7c;
 }
 
 /*Phone Pics*/
@@ -343,6 +345,7 @@ header span {
 
 .getStarted div p {
   line-height: 1.4;
+  color: #7c7c7c;
 }
 
 
