@@ -89,7 +89,12 @@ header span {
     padding: 2rem 0;
   }
 
-  header .webNav {
+  .navigation .navLogo{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  header .webNav ul {
     display: none;
   }
 
