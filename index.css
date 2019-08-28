@@ -397,10 +397,12 @@ body .banner h1 {
   border: 1px solid #C6C6C6;
   border-radius: 20%;
   padding: 5px 10px;
+  transition: ease-out 0.1s;
 }
 .aboutUs a .fa-arrow-right:hover{
-    color: #C6C6C6;
+    color: #D80000;
     box-shadow: 0px 1px 2px 1px #c0bebe;
+    transition: ease-in 0.1s;
 }
 
 
