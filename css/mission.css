@@ -277,7 +277,7 @@ header span {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid #7c7c7c;
+  border-bottom: 1px solid #ededed;
 }
 
 .features div {
@@ -344,7 +344,14 @@ header span {
   color: #ededed;
   font-size: 25px;
   font-weight: bold;
-  padding: 2em 0;
+  padding: 2rem 0;
+  border-radius: .6rem;
+  transition: ease-out 0.2s;
+}
+
+.phonePics .tryItOut p:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
 }
 
 @media screen and (max-width: 500px) {
