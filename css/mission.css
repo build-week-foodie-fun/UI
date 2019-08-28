@@ -120,6 +120,11 @@ header span {
     color: black;
   }
 
+  .navSlide .model-list {
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
+
   .navSlide .fa-times {
     position: absolute;
     top: 22px;
@@ -316,6 +321,10 @@ header span {
 
 .getStarted div {
   max-width: 30%;
+}
+
+.getStarted div p {
+  line-height: 1.4;
 }
 
 

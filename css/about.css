@@ -113,10 +113,14 @@ header span {
 
   .navSlide a {
     display: block;
-    padding: 20px 30px;
     font-size: 25px;
     text-decoration: none;
     color: black;
+  }
+
+  .navSlide .model-list {
+    margin-top: 3rem;
+    padding: 0 3rem;
   }
 
   .navSlide .fa-times {

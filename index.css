@@ -119,6 +119,11 @@ header span {
     color: black;
   }
 
+  .navSlide .model-list {
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
+
   .navSlide .fa-times {
     position: absolute;
     top: 22px;
@@ -241,6 +246,9 @@ body .banner h1 {
   max-width: 30%;
 }
 
+.div1 p {
+  line-height: 1.4;
+}
 
 /*How it Works*/
 
