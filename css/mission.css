@@ -19,44 +19,42 @@ header .webNav {
   /* Navigation */
 header .navLogo p{
     font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: #D80000;
+    font-weight: 500;
 }
 
 header .navigation div {
     display: flex;
     align-items: center;
     width: 40%;
+    padding: 0 1rem;
   }
 
 header .navigation {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 2rem;
+  padding: 1.6rem;
 }
 
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
-  padding: 0 1em;
+  padding: 0 1rem;
   color: #7c7c7c;
   transition: ease-out 0.2s;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 header .navigation ul a:hover {
-  color: black;
-  padding-bottom: .5em;
-  border-bottom: 1px solid black;
+  color: #D80000;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #D80000;
   transition: ease-in 0.2s;
   text-shadow: 1px 1px 1px #ededed;
 }
 
 .navigation img {
   height: 60px;
-}
-
-.navigation p {
-  font-size: 2rem;
-  color: #D80000;
-  font-weight: 500;
 }
 
 header span {
@@ -84,7 +82,12 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
-  header .webNav {
+  .navigation .navLogo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .webNav ul {
     display: none;
   }
 
@@ -280,6 +283,7 @@ header span {
   font-size: 2rem;
   color: white;
   padding: 2em 0;
+  border-bottom: 1px solid #ededed;
 }
 
 .features div {
@@ -377,7 +381,14 @@ header span {
   color: #7c7c7c;
   font-size: 25px;
   font-weight: bold;
-  padding: 2em 0;
+  padding: 2rem 0;
+  border-radius: .6rem;
+  transition: ease-out 0.2s;
+}
+
+.phonePics .tryItOut p:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
 }
 .phonePics .tryItOut p:hover {
   color: #c6c6c6;
@@ -424,12 +435,14 @@ header span {
 .getStarted {
   display: flex;
   justify-content: space-evenly;
+
   text-align: center;
   align-items: center;
   margin-top: 5em;
 }
 .getStarted h1{
   font-size: 2rem;
+  margin-top: 5em;
 }
 
 .getStarted div {
@@ -441,6 +454,7 @@ header span {
   line-height: 1.4;
   color: #7c7c7c;
   font-size: 1.2rem;
+  padding-top: 1rem;
 }
 
 
