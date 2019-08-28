@@ -12,49 +12,50 @@ header section {
 
 header .webNav {
   display: flex;
-  width: 40%;
+  /* max-width: 40%; */
   justify-content: flex-end;
 }
 
 
 /* Navigation */
 
-header .navLogo p{
+header .navLogo p {
     font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: #D80000;
+    font-weight: bold;
+}
+
+header .navigation {
+  padding: 1.6rem;
 }
 
 header .navigation div {
   display: flex;
   align-items: center;
-  width: 40%;
+  max-width: 40%;
+  padding: 0 1rem;
 }
 
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
-  padding: 0 1em;
+  padding: 0 1rem;
   color: #7c7c7c;
   transition: ease-out 0.2s;
   font-size: 1rem;
 }
 
 header .navigation ul a:hover {
-  color: black;
-  padding-bottom: .5em;
-  border-bottom: 1px solid black;
+  color: #D80000;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #D80000;
   transition: ease-in 0.2s;
   text-shadow: 1px 1px 1px #ededed;
 }
 
 .navigation img {
   height: 60px;
-}
-
-.navigation p {
-  font-size: 2rem;
-  color: #D80000;
-  font-weight: bold;
-  /* padding: 0 2em; */
 }
 
 header span {
@@ -82,7 +83,12 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
-  header .webNav {
+  .navigation .navLogo{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  header .webNav ul {
     display: none;
   }
 
@@ -166,27 +172,78 @@ header span {
 /* Banner */
 
 body .banner {
-  height: 70%;
-  width: 100%;
+  margin: 0 auto;
+  width: 95%;
+  height: 55rem;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
+  filter: grayscale(90%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+}
+
+.banner-heading {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px #a3a2a2;
+  margin-bottom: 1rem;
+}
+
+.banner .buttons {
+  display: flex;
   align-items: center;
-  filter: grayscale(25%);
+  justify-content: space-around;
+  width: 50%;
+}
+
+.banner .buttons button {
+  width: 45%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: .6rem;
+  background: #D80000;
+  border: none;
+  box-shadow: 2px 1px 1px #797777;
+  color: #ededed;
+  outline: none;
+  transition: ease-out 0.2s;
+}
+
+.banner .buttons button:nth-child(1) {
+  background: #fff;
+  color: #D80000;
+}
+
+.banner .buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
+}
+
+.banner .buttons button:nth-child(1):hover {
+  color: #fff;
+  background: #D80000;
+}
+
+.banner .buttons button:nth-child(2):hover {
+  background: #fff;
+  color: #D80000;
 }
 
 body .banner h1 {
-  font-size: 80px;
+  font-size: 60px;
   width: 50%;
-  background-color: #ededed;
+  margin-left: 5%;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black;
   padding: 15px;
-  margin: 20% 0;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 2px 1px 2px #a3a2a2;
 }
 
 @media screen and (max-width: 500px) {
@@ -202,7 +259,6 @@ body .banner h1 {
     font-size: 30px;
     border-radius: 20px;
     width: 65%;
-
   }
 }
 
@@ -252,7 +308,7 @@ body .banner h1 {
 
 .explore .div1 {
   max-width: 30%;
-  text-align: right;
+  text-align: left;
   flex-direction: column;
 }
 
@@ -268,6 +324,8 @@ body .banner h1 {
   padding: 5px;
   align-content: center;
   display: flex;
+  max-width: 50%;
+  justify-content: space-between;
 }
 
 .howItWorks {
@@ -286,12 +344,12 @@ body .banner h1 {
 }
 
 .howItWorks .div3 h2 {
-  color: #ededed;
+  color: #fff;
 }
 
 .howItWorks .div3 p {
   line-height: 1.4;
-  color: #c6c6c6;
+  color: #fff;
 }
 
 .howItWorks .div4 {
@@ -303,10 +361,11 @@ body .banner h1 {
 
 .howItWorks div img {
     max-width: 25%;
+    border-radius: 1em;
   /* max-height: 30em; */
   /* padding: 2em; */
   /* justify-content: space-between; */
-  border-radius: 1em;
+/*   border-radius: 1em; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -362,11 +421,15 @@ body .banner h1 {
 .aboutUs {
   height: 60%;
   margin-top: 1.75em;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutUs div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+/*   justify-content: center; */
 }
 
 .aboutUs .div5 h2{
@@ -381,7 +444,8 @@ body .banner h1 {
 
 .aboutUs a {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+/*   justify-content: flex-end; */
   padding-top: 1.5em;
 }
 
@@ -391,10 +455,12 @@ body .banner h1 {
   border: 1px solid #C6C6C6;
   border-radius: 20%;
   padding: 5px 10px;
+  transition: ease-out 0.1s;
 }
 .aboutUs a .fa-arrow-right:hover{
-    color: #C6C6C6;
+    color: #D80000;
     box-shadow: 0px 1px 2px 1px #c0bebe;
+    transition: ease-in 0.1s;
 }
 
 
