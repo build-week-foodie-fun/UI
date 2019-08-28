@@ -1,30 +1,33 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Foodie Fun</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
   <link href="index.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script>
-    function openSlideMenu(){
+    function openSlideMenu() {
       document.getElementById('menu').style.width = '250px';
       document.getElementById('content').style.marginLeft = '250px';
     }
   </script>
 
-    <script>
-        function closeSlideMenu(){
-          document.getElementById('menu').style.width = '0';
-          document.getElementById('content').style.marginLeft = '0';
-        }
-    </script>
-  
+  <script>
+    function closeSlideMenu() {
+      document.getElementById('menu').style.width = '0';
+      document.getElementById('content').style.marginLeft = '0';
+    }
+  </script>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -32,45 +35,45 @@
 </head>
 
 <body>
-<header>  
-  <section class = "navigation">
-    <img src="images/Foodie_Icon.png"/>
-    <p>Foodie Fun</p>
-    <div class="webNav">
+  <header>
+    <section class="navigation">
+      <img src="images/Foodie_Icon.png" />
+      <p>Foodie Fun</p>
+      <div class="webNav">
         <ul>
-            <a href="index.html">Home</a>
-            <a href="mission.html">Mission</a>
-            <a href="about.html">About</a>
-            <a href="http://foodiefunapp.netlify.com/">Sign Up</a>
+          <a href="index.html">Home</a>
+          <a href="mission.html">Mission</a>
+          <a href="about.html">About</a>
+          <a href="http://foodiefunapp.netlify.com/">Sign Up</a>
         </ul>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <section class=slideMenu">
-        <div id="slideContent">
+      <div id="slideContent">
         <span class="slide">
-            <a href="#" onClick="openSlideMenu()">
-            <i class="fas fa-bars" ></i>
-            </a>
+          <a href="#" onClick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
         </span>
 
         <span id="menu" class="navSlide">
-            <a href="#" onClick="closeSlideMenu()">
-            <i class="fas fa-times" ></i>
-            </a>
-            <a href="index.html">Home</a>
-            <a href="mission.html">Mission</a>
-            <a href="about.html">About</a>
-            <a href="http://foodiefunapp.netlify.com/">Sign Up</a>
+          <a href="#" onClick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <a href="index.html" class="model-list">Home</a>
+          <a href="mission.html" class="model-list">Mission</a>
+          <a href="about.html" class="model-list">About</a>
+          <a href="http://foodiefunapp.netlify.com/" class="model-list">Sign Up</a>
         </span>
-        </div>
+      </div>
     </section>
-</header>
-<section class="banner">
+  </header>
+  <section class="banner">
     <h1>Come Eat With Us</h1>
     <!-- <img src="images/peopleEating.jpg"/> -->
-</section>
-<!-- <section class="loginBox">
+  </section>
+  <!-- <section class="loginBox">
     <form>
         <img src="images/Foodie_Icon.png"/>
         <p>Username</p>
@@ -82,50 +85,56 @@
     </form>
 </section> -->
 
-<section class="content">
-  <!--content -->
-    <section class="explore">    
-        <div class="div1">
-            <h2>Explore and Eat</h2>
-            <p>The perfect app for avid foodies, Foodie Fun is built for those who love going out to explore new eats.  It's designed for you to find new adventures and to share them with others. Did I like the burrito or enchilada better? The spicy version or normal?
-            </p>
-        </div>
-        <div class="div2">
-            <img src="images/phoneAndFood.jpg"/>
-        </div>
-    </section><!--closes explore-->
+  <section class="content">
+    <!--content -->
+    <section class="explore">
+      <div class="div1">
+        <h2>Explore and Eat</h2>
+        <p>The perfect app for avid foodies, Foodie Fun is built for those who love going out to explore new eats. It's
+          designed for you to find new adventures and to share them with others. Did I like the burrito or enchilada
+          better? The spicy version or normal?
+        </p>
+      </div>
+      <div class="div2">
+        <img src="images/phoneAndFood.jpg" />
+      </div>
+    </section>
+    <!--closes explore-->
 
 
-    <section class="howItWorks">    
-            <div class="div3">
-                <h2>How It Works</h2>
-                <p>Download the app and use the easy-to-use filters and actins to log where you've eaten, what you ordered, what you liked and didn’t like, what the wait time was at certain times of day, etc.
-                </p>
-            </div>
-            <div class="div4">
-                <img src="images/Foodie App Prototype/Home Page.png" class="screenShot1"/>
-                <img src="images/Foodie App Prototype/Filter Dropdown.png" class="screenShot2"/>
-                <img src="images/Foodie App Prototype/Price Input.png" class="screenShot3"/>
-            </div>
-        </section><!--closes howItWorks-->
-        <section class="aboutUs">    
-                <div class="div5">
-                    <h2>Get To Know Us</h2>
-                    <p>Meet the team that developed this amazing product!
-                    </p>
-                </div>
-                <div>
-                    <a href="about.html"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </section><!--closes aboutUs-->
-    
+    <section class="howItWorks">
+      <div class="div3">
+        <h2>How It Works</h2>
+        <p>Download the app and use the easy-to-use filters and actins to log where you've eaten, what you ordered, what
+          you liked and didn’t like, what the wait time was at certain times of day, etc.
+        </p>
+      </div>
+      <div class="div4">
+        <img src="images/Foodie App Prototype/Home Page.png" class="screenShot1" />
+        <img src="images/Foodie App Prototype/Filter Dropdown.png" class="screenShot2" />
+        <img src="images/Foodie App Prototype/Price Input.png" class="screenShot3" />
+      </div>
+    </section>
+    <!--closes howItWorks-->
+    <section class="aboutUs">
+      <div class="div5">
+        <h2>Get To Know Us</h2>
+        <p>Meet the team that developed this amazing product!
+        </p>
+      </div>
+      <div>
+        <a href="about.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <!--closes aboutUs-->
 
-</section><!--closes content-->
+
+  </section>
+  <!--closes content-->
 
 </body>
 <footer>
-    <p>© Foodie Fun App 2019</p>
+  <p>© Foodie Fun App 2019</p>
 </footer>
+
 </html>
-
-
