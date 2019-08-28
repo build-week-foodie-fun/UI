@@ -166,26 +166,25 @@ header span {
 /* Banner */
 
 body .banner {
+    margin: 0 auto;
   height: 70%;
-  width: 100%;
+  width: 95%;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
+  filter: grayscale(90%);
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body .banner h1 {
-  font-size: 80px;
+  font-size: 60px;
   width: 50%;
-  background-color: #ededed;
-  padding: 15px;
-  margin: 20% 0;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 2px 1px 2px #a3a2a2;
+  padding: 15% 0;
+  margin-left: 5%;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 @media screen and (max-width: 500px) {
