@@ -348,6 +348,7 @@ header span {
 .getStarted div p {
   line-height: 1.4;
   color: #7c7c7c;
+  font-size: 1.2rem;
 }
 
 
@@ -404,4 +405,5 @@ footer p {
   text-align: center;
   padding: 2em;
   color: #ededed;
+  font-size: 1.1rem;
 }

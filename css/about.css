@@ -297,3 +297,17 @@ header span {
   transform: scale(1.1);
   transition: ease-in 0.2s;
 }
+
+/* Footer */
+footer {
+  background-color: #D80000;
+  height: 20%;
+  margin-top: 5em;
+}
+
+footer p {
+  text-align: center;
+  padding: 2em;
+  color: #ededed;
+  font-size: 1.1rem;
+}
