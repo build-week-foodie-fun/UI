@@ -300,6 +300,13 @@ body .banner h1 {
   border-radius: 1em;
 }
 
+@media screen and (max-width: 1000px) {
+  .howItWorks div .screenShot2,
+  .screenShot3 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .content {
     width: 100%;
@@ -324,11 +331,6 @@ body .banner h1 {
 
   .explore .div1 {
     max-width: 95%;
-  }
-
-  .howItWorks div .screenShot2,
-  .screenShot3 {
-    display: none;
   }
 
   .howItWorks div .screenShot1 {
