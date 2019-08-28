@@ -34,7 +34,7 @@ header .navigation div {
 
 header .navigation{
   border-bottom: 1px solid #ededed;
-  padding-bottom: 2rem;
+  padding: 1.6rem;
 }
 
 header .navigation div .navLogo{

@@ -26,6 +26,10 @@ header .navLogo p {
     font-weight: bold;
 }
 
+header .navigation {
+  padding: 1.6rem;
+}
+
 header .navigation div {
   display: flex;
   align-items: center;
