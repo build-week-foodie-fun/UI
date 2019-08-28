@@ -197,7 +197,6 @@ header span{
 .steps div img{
     height: 20em;
     width: 20em;
-    overflow: hidden;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -240,6 +239,8 @@ header span{
 }
 .features .list ol{
     justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
