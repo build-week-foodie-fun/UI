@@ -46,7 +46,7 @@ header .navigation ul a:hover {
 .navigation p {
   font-size: 2rem;
   color: #D80000;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 header span {
@@ -236,13 +236,15 @@ header span {
   background-color: #D80000;
 }
 
+.tryItOut a {
+  text-decoration: none;
+}
+
 .phonePics .tryItOut p {
-  color: #C6C6C6;
+  color: #ededed;
   font-size: 25px;
   font-weight: bold;
-  text-decoration: none;
   padding: 2em 0;
-
 }
 
 @media screen and (max-width: 500px) {
@@ -336,5 +338,5 @@ footer {
 footer p {
   text-align: center;
   padding: 2em;
-  color: #C6C6C6;
+  color: #ededed;
 }

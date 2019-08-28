@@ -46,7 +46,7 @@ header .navigation ul a:hover {
 .navigation p {
   font-size: 2rem;
   color: #D80000;
-  font-weight: bold;
+  font-weight: 500;
   /* padding: 0 2em; */
 }
 
