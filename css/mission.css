@@ -298,6 +298,10 @@ header span {
     text-align: center;
 }
 
+.features .list i .fas{
+    font-size: 3rem;
+}
+
 /* .features .text p {
   font-size: 1.2rem;
   color: #7c7c7c;
