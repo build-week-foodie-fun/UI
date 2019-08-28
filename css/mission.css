@@ -238,9 +238,12 @@ header span {
 
 .features .list ol {
   justify-content: flex-end;
+  list-style: disc;
 }
 
-
+.list ol li {
+  padding: .5rem 0;
+}
 
 /*Phone Pics*/
 .phonePics {
