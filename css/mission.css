@@ -346,7 +346,7 @@ header span {
 .phonePics .appImg {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: #D80000; */
+  /* animation: slide 5s infinite; */
 }
 
 .phonePics .appImg img:hover{
