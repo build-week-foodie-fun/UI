@@ -175,171 +175,360 @@ header span {
   }
 }
 
-/* Up Arrow */
-.upArrow{
-  position: fixed;
-  /* width: 50px; 
-  height: 50px; */
-  color: #d80000;
-  bottom: 40px;
-  right: 50px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 30px;
+/* CONTENT */
+.content {
+  margin: 0 auto;
+  padding-top: 150px;
+  max-width: 100%;
 }
 
-.upArrow:hover{
-  color: #7c7c7c;
+.content h1 {
+  font-size: 25px;
+  color: #D80000;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
-/* About */
-
-.about-us {
-  border-bottom: 1px solid #ededed;
-}
-
-.about-info {
+/* Steps */
+.steps {
   display: flex;
-  flex-direction: column;
-  max-width: 60%;
-  margin: 2rem auto;
-  padding: 0 4rem;
-  line-height: 1.4;
-  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 6rem;
 }
 
-@media (max-width: 800px) {
-  .about-us {
-    padding-top: 10rem;
-    text-align: center;
-  }
-
-  .about-info {
-    max-width: 80%;
-  }
+.steps div img {
+  box-shadow: 2px 3px 2px #a19f9f;
 }
 
-@media (max-width: 500px) {
-  .about-info {
-    max-width: 100%;
-    padding: 1rem 1rem 2rem 1rem;
+/* HEAD */
+.steps div img {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  body .content {
+    /* width: 90%; */
+    margin: 0;
+    padding-top: 5rem;
+  }
+
+  body .content p {
+    font-size: 18px;
+  }
+
+  .steps {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .steps div {
     margin: 0 auto;
-    align-items: center;
+  }
+
+  .steps div img {
+    height: 10em;
+    width: 10em;
   }
 }
 
-.about-info h1 {
-  font-size: 2rem;
-  padding: 1rem 0;
-  align-items: center;
-  color: #D80000;
+@media screen and (max-width: 800px) {
+  body .content {
+    padding-top: 14rem;
+  }
 }
 
-.about-info p {
-  color: #7c7c7c;
-  font-size: 1.2rem;
+/* ======= */
+
+.steps div h3 {
+  text-align: center;
+  color: #d80000;
+  padding: 3rem 0 4rem 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.meet-the-team {
+.steps div img {
+  height: 20em;
+  width: 20em;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  body .content {
+    margin: 2rem 0;
+  }
+
+  body .content p {
+    font-size: 18px;
+  }
+
+  .steps {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .steps div {
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .steps div img {
+    height: 10em;
+    width: 10em;
+  }
+}
+
+/* Features */
+.features {
+  padding-bottom: 5%;
+  margin-bottom: 5%;
   display: flex;
-  flex-direction: column;
-  padding: 2rem 4rem;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background: #D80000;
+  box-shadow: 2px 3px 5px rgb(114, 6, 6);
 }
 
-@media (max-width: 500px) {
-  .meet-the-team {
-    padding: 2rem 1rem;
-  }
-
-  .title {
-    text-align: center;
-  }
-}
-
-.meet-the-team .title {
+.features h1 {
   font-size: 2rem;
-  padding: 1rem 0;
-  color: #D80000;
+  color: white;
+  padding: 2rem 0 1rem 0;
 }
 
-.team-profiles {
+.features div {
+  justify-content: center;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 
-@media (max-width: 500px) {
-  .team-profiles {
-    justify-content: center;
-    font-size: 1.6rem;
-  }
-
-  .team-profile {
-    width: 100%;
-    align-items: center;
-  }
-}
-
-.team-profiles .team-profile {
+.features .list div {
+  height: 250px;
+  width: 170px;
+  margin: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 0;
-  padding: 2rem;
-  border-radius: 6px;
-  background: #f7f3f3;
-  color: #6e6e6e;
-  box-shadow: 2px 2px 2px #ededed;
-  margin: 1rem;
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 2px 3px 5px rgb(114, 6, 6);
+  transition: ease-out 0.2s;
 }
 
-.team-profile-img {
-  width: 200px;
-  height: 200px;
-  justify-self: center;
-  border-radius: 50%;
-  box-shadow: 2px 2px 2px #a7a6a6;
+.features .list div:hover {
+  transition: ease-in 0.2s;
+  background: #fff;
+  transform: scale(1.125);
 }
-
-.team-profile-img img {
+.features .list div:hover p{
+  transition: ease-out 0.2s;
+  color: #d80000;
+}
+.features .list div:hover .svg-inline--fa {
+  transition: ease-out 0.2s;
   width: 100%;
-  border-radius: 50%;
-  align-self: center;
-  filter: grayscale(40%);
+  color: #d80000;
+  border-bottom: 1px solid #d80000;
 }
 
-.team-profile .team-role {
-  padding: 2rem 0;
+.features div .text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.features .list p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #7c7c7c;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-.team-role ul li {
-  padding: 1rem 0;
-}
-
-.github-link {
-  align-self: center;
-}
-
-.github-link i {
-  font-size: 2.4rem;
+.features .list div .svg-inline--fa {
+  font-size: 3rem;
+  color: #7c7c7c;
+  margin: 0 auto;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #7c7c7c;
   transition: ease-out 0.2s;
-  color: black;
 }
 
-@media (max-width: 500px) {
-  .github-link i {
-    font-size: 3.2rem;
+/*Phone Pics*/
+.phone-pics {
+  padding-top: 8rem;
+}
+
+.phone-pics .app-img {
+  display: flex;
+  justify-content: space-evenly;
+  /* animation: slide 5s infinite; */
+}
+
+.phone-pics .app-img img:hover {
+  transition: ease-in 0.2s;
+  transform: scale(1.25);
+}
+
+.phone-pics .app-img img {
+  max-width: 30%;
+  /* padding: 2.5%; */
+  box-sizing: border-box;
+  border-radius: 2em;
+  transition: ease-out 0.2s;
+}
+
+/* Try It Out Button */
+.phone-pics .try-it-out {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  /* background-color: #D80000; */
+}
+
+@media screen and (max-width: 500px) {
+  .phone-pics {
+    padding: 0;
   }
 }
 
-.github-link i:hover {
+.try-it-out a {
+  text-decoration: none;
+}
+
+.phone-pics .try-it-out p {
+  color: #7c7c7c;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 2rem 0;
+  border-radius: .6rem;
+  transition: ease-out 0.2s;
+}
+
+.phone-pics .try-it-out p:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+}
+
+.phone-pics .try-it-out p:hover {
+  color: #D80000;
+}
+
+@media screen and (max-width: 500px) {
+  .features {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    padding-top: 2rem;
+    max-width: 90%;
+  }
+
+  .features .text {
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+    line-height: 1.4;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 3rem;
+  }
+
+  .features .list {
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+
+  .features .list ol {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .phone-pics .app-img {
+    display: none;
+    flex-direction: column;
+  }
+}
+
+/* Get Started */
+.get-started {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 8rem 0 4rem 0;
+}
+
+.get-started h1 {
+  font-size: 2rem;
+}
+
+.get-started div {
+  max-width: 30%;
+}
+
+.get-started div p {
+  line-height: 1.4;
+  color: #7c7c7c;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+
+.get-started div.button a button {
+  margin: 0 auto;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  background: #d80000;
+  color: #ededed;
+  outline: none;
+  border-radius: .6rem;
+  box-shadow: 2px 2px 2px #d8d5d5;
+  transition: ease-out 0.2s;
+}
+
+.get-started div.button a button:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  .get-started {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .get-started div {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .get-started .text-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+    margin: 0 auto;
+  }
+
+  .get-started div.button {
+    margin: 0 auto;
+  }
 }
 
 /* Footer */
@@ -353,5 +542,5 @@ footer p {
   text-align: center;
   padding: 2em;
   color: #ededed;
-  font-size: 1.1rem;
+  font-size: 1.1rem
 }
