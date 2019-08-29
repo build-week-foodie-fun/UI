@@ -8,7 +8,7 @@ header section {
   justify-content: space-between;
 }
 
-header .webNav {
+header .web-nav {
     display: flex;
     width: 40%;
     justify-content: flex-end;
@@ -16,7 +16,7 @@ header .webNav {
   
   
   /* Navigation */
-header .navLogo p{
+header .nav-logo p{
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
     color: #D80000;
@@ -62,7 +62,7 @@ header span {
 }
 
 @media screen and (max-width: 1000px) {
-  .navigation .webNav {
+  .navigation .web-nav {
     width: 100%;
   }
 }
@@ -88,13 +88,13 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
-  .navigation .navLogo {
+  .navigation .nav-logo {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  header .webNav ul {
+  header .web-nav ul {
     display: none;
   }
 
@@ -115,7 +115,7 @@ header span {
     display: initial;
   }
 
-  .navSlide {
+  .nav-slide {
     height: 100%;
     width: 0;
     position: fixed;
@@ -129,7 +129,7 @@ header span {
     transition: 0.7s;
   }
 
-  .navSlide a {
+  .nav-slide a {
     display: block;
     padding: 20px 30px;
     font-size: 25px;
@@ -137,24 +137,24 @@ header span {
     color: black;
   }
 
-  .navSlide .model-list {
+  .nav-slide .model-list {
     margin-top: 3rem;
     padding: 0 2rem;
   }
 
-  .navSlide .fa-times {
+  .nav-slide .fa-times {
     position: absolute;
     top: 22px;
     right: 22px;
     margin-left: 40px;
   }
 
-  #slideContent span .slide a {
+  #slide-content span .slide a {
     color: black;
     font-size: 36px;
   }
 
-  #slideContent {
+  #slide-content {
     padding: 20px;
     transition: margin-left 0.7s;
     overflow: hidden;
@@ -163,13 +163,13 @@ header span {
     left: 0;
   }
 
-  #slideContent a {
+  #slide-content a {
     font-size: 2rem;
     color: #7c7c7c;
     transition: ease-out 0.2s;
   }
 
-  #slideContent a:hover {
+  #slide-content a:hover {
     color: black;
     transition: ease-in 0.2s;
   }
@@ -335,13 +335,13 @@ body .banner h1 {
   box-shadow: 2px 1px 2px #c0bebe;
 }
 
-.explore .div1 {
+.explore .div-1 {
   max-width: 30%;
   text-align: left;
   flex-direction: column;
 }
 
-.div1 p {
+.div-1 p {
   line-height: 1.4;
   color: #7c7c7c;
 }
@@ -349,7 +349,7 @@ body .banner h1 {
 
 /*How it Works*/
 
-.howItWorks div {
+.how-it-works div {
   padding: 5px;
   align-content: center;
   display: flex;
@@ -357,7 +357,7 @@ body .banner h1 {
   justify-content: space-between;
 }
 
-.howItWorks {
+.how-it-works {
   display: flex;
   flex-direction: row-reverse;
   height: 50%;
@@ -367,28 +367,28 @@ body .banner h1 {
   padding: 3rem 0;
 }
 
-.howItWorks .div3 {
+.how-it-works .div-3 {
   max-width: 30%;
   flex-direction: column;
 }
 
-.howItWorks .div3 h2 {
+.how-it-works .div-3 h2 {
   color: #fff;
 }
 
-.howItWorks .div3 p {
+.how-it-works .div-3 p {
   line-height: 1.4;
   color: #fff;
 }
 
-.howItWorks .div4 {
+.how-it-works .div-4 {
   justify-content: space-between;
   /* margin: 5%; */
   width: 70%; 
   box-sizing: border-box; 
 }
 
-.howItWorks div img {
+.how-it-works div img {
     max-width: 25%;
     border-radius: 1em;
 }
@@ -403,38 +403,38 @@ body .banner h1 {
     padding: 5% 0;
   }
 
-  .explore .div2 {
+  .explore .div-2 {
     padding-top: 0;
   }
 
   .explore,
-  .howItWorks {
+  .how-it-works {
     flex-direction: column;
     margin: 0 auto;
   }
 
   .explore div,
-  .howItWorks .div3 {
+  .how-it-works .div-3 {
     max-width: 95%;
     padding: 3rem;
     align-items: center;
     text-align: center;
   }
 
-  .explore .div1 {
+  .explore .div-1 {
     max-width: 95%;
   }
 
-  .howItWorks div .screenShot1 {
+  .how-it-works div .screen-shot-1 {
     width: 100%;
     height: auto;
   }
 
-  .howItWorks .div4 {
+  .how-it-works .div-4 {
     max-width: 70%;
   }
 
-  .aboutUs div {
+  .about-us div {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -442,38 +442,38 @@ body .banner h1 {
   }
 }
 
-.aboutUs {
+.about-us {
   height: 60%;
   margin-top: 1.75em;
   display: flex;
   justify-content: center;
 }
 
-.aboutUs div {
+.about-us div {
   display: flex;
   flex-direction: column;
   text-align: center;
 /*   justify-content: center; */
 }
 
-.aboutUs .div5 h2{
+.about-us .div-5 h2{
   color: #7c7c7c;
   font-size: 1.6rem;
   padding: 1rem 0;
 }
-.aboutUs .div5 p{
+.about-us .div-5 p{
     color: #7c7c7c;
     font-size: 1.2rem;
   }
 
-.aboutUs a {
+.about-us a {
   display: flex;
   justify-content: center;
 /*   justify-content: flex-end; */
   padding-top: 1.5em;
 }
 
-.aboutUs a .fa-arrow-right {
+.about-us a .fa-arrow-right {
   color: #7c7c7c;
   font-size: 30px;
   border: 1px solid #C6C6C6;
@@ -481,7 +481,7 @@ body .banner h1 {
   padding: 5px 10px;
   transition: ease-out 0.1s;
 }
-.aboutUs a .fa-arrow-right:hover{
+.about-us a .fa-arrow-right:hover{
     color: #D80000;
     box-shadow: 0px 1px 2px 1px #c0bebe;
     transition: ease-in 0.1s;
