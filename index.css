@@ -23,7 +23,7 @@ header .navLogo p {
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
     color: #D80000;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 header .navigation {
