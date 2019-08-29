@@ -200,7 +200,7 @@ header span {
 .about-info {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 60%;
   margin: 2rem auto;
   padding: 0 4rem;
   line-height: 1.4;
@@ -211,6 +211,9 @@ header span {
   .about-us {
     padding-top: 10rem;
     text-align: center;
+  }
+  .about-info {
+    max-width: 80%;
   }
 }
 
