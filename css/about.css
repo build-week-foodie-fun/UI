@@ -8,7 +8,7 @@ header section {
   justify-content: space-between;
 }
 
-header .webNav {
+header .web-nav {
     display: flex;
     width: 40%;
     justify-content: flex-end;
@@ -16,7 +16,7 @@ header .webNav {
   
   
   /* Navigation */
-header .navLogo p{
+header .nav-logo p{
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
     color: #D80000;
@@ -62,28 +62,10 @@ header span {
 }
 
 @media screen and (max-width: 1000px) {
-  .navigation .webNav {
+  .navigation .web-nav {
     width: 100%;
   }
 }
-
-/* @media screen and (max-width: 800px) {
-  .navigation {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navigation .webNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navigation .webNav ul {
-    width: 100%;
-  }
-} */
 
 @media screen and (max-width: 800px) {
   header {
@@ -106,12 +88,13 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
-  .navigation .navLogo {
+  .navigation .nav-logo {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
-  header .webNav ul {
+  header .web-nav ul {
     display: none;
   }
 
@@ -132,7 +115,7 @@ header span {
     display: initial;
   }
 
-  .navSlide {
+  .nav-slide {
     height: 100%;
     width: 0;
     position: fixed;
@@ -146,7 +129,7 @@ header span {
     transition: 0.7s;
   }
 
-  .navSlide a {
+  .nav-slide a {
     display: block;
     padding: 20px 30px;
     font-size: 25px;
@@ -154,24 +137,24 @@ header span {
     color: black;
   }
 
-  .navSlide .model-list {
+  .nav-slide .model-list {
     margin-top: 3rem;
     padding: 0 2rem;
   }
 
-  .navSlide .fa-times {
+  .nav-slide .fa-times {
     position: absolute;
     top: 22px;
     right: 22px;
     margin-left: 40px;
   }
 
-  #slideContent span .slide a {
+  #slide-content span .slide a {
     color: black;
     font-size: 36px;
   }
 
-  #slideContent {
+  #slide-content {
     padding: 20px;
     transition: margin-left 0.7s;
     overflow: hidden;
@@ -180,13 +163,13 @@ header span {
     left: 0;
   }
 
-  #slideContent a {
+  #slide-content a {
     font-size: 2rem;
     color: #7c7c7c;
     transition: ease-out 0.2s;
   }
 
-  #slideContent a:hover {
+  #slide-content a:hover {
     color: black;
     transition: ease-in 0.2s;
   }
