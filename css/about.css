@@ -9,26 +9,26 @@ header section {
 }
 
 header .web-nav {
-    display: flex;
-    width: 40%;
-    justify-content: flex-end;
-  }
-  
-  
-  /* Navigation */
-header .nav-logo p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 2rem;
-    color: #D80000;
-    font-weight: 500;
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+
+/* Navigation */
+header .nav-logo p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #D80000;
+  font-weight: 500;
 }
 
 header .navigation div {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    padding: 0 1rem;
-  }
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 0 1rem;
+}
 
 header .navigation {
   border-bottom: 1px solid #ededed;
@@ -180,6 +180,7 @@ header span {
 .about-us {
   border-bottom: 1px solid #ededed;
 }
+
 .about-info {
   display: flex;
   flex-direction: column;
@@ -195,6 +196,7 @@ header span {
     padding-top: 10rem;
     text-align: center;
   }
+
   .about-info {
     max-width: 80%;
   }

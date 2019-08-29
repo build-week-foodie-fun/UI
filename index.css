@@ -9,26 +9,26 @@ header section {
 }
 
 header .web-nav {
-    display: flex;
-    width: 40%;
-    justify-content: flex-end;
-  }
-  
-  
-  /* Navigation */
-header .nav-logo p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 2rem;
-    color: #D80000;
-    font-weight: 500;
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+
+/* Navigation */
+header .nav-logo p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #D80000;
+  font-weight: 500;
 }
 
 header .navigation div {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    padding: 0 1rem;
-  }
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 0 1rem;
+}
 
 header .navigation {
   border-bottom: 1px solid #ededed;
@@ -288,6 +288,7 @@ body .banner h1 {
     flex-direction: column;
     padding-top: 2rem;
   }
+
   .buttons button {
     margin: .7rem 0;
   }
@@ -323,7 +324,7 @@ body .banner h1 {
   justify-content: space-evenly;
 }
 
-.explore div{
+.explore div {
   display: flex;
   margin: 10px 0;
   max-width: 50%;
@@ -384,13 +385,13 @@ body .banner h1 {
 .how-it-works .div-4 {
   justify-content: space-between;
   /* margin: 5%; */
-  width: 70%; 
-  box-sizing: border-box; 
+  width: 70%;
+  box-sizing: border-box;
 }
 
 .how-it-works div img {
-    max-width: 25%;
-    border-radius: 1em;
+  max-width: 25%;
+  border-radius: 1em;
 }
 
 @media screen and (max-width: 800px) {
@@ -453,23 +454,24 @@ body .banner h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-/*   justify-content: center; */
+  /*   justify-content: center; */
 }
 
-.about-us .div-5 h2{
+.about-us .div-5 h2 {
   color: #7c7c7c;
   font-size: 1.6rem;
   padding: 1rem 0;
 }
-.about-us .div-5 p{
-    color: #7c7c7c;
-    font-size: 1.2rem;
-  }
+
+.about-us .div-5 p {
+  color: #7c7c7c;
+  font-size: 1.2rem;
+}
 
 .about-us a {
   display: flex;
   justify-content: center;
-/*   justify-content: flex-end; */
+  /*   justify-content: flex-end; */
   padding-top: 1.5em;
 }
 
@@ -481,10 +483,11 @@ body .banner h1 {
   padding: 5px 10px;
   transition: ease-out 0.1s;
 }
-.about-us a .fa-arrow-right:hover{
-    color: #D80000;
-    box-shadow: 0px 1px 2px 1px #c0bebe;
-    transition: ease-in 0.1s;
+
+.about-us a .fa-arrow-right:hover {
+  color: #D80000;
+  box-shadow: 0px 1px 2px 1px #c0bebe;
+  transition: ease-in 0.1s;
 }
 
 
