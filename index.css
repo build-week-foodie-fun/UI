@@ -273,7 +273,7 @@ body .banner h1 {
   border: none;
 }
 
-.banner .buttons a button:nth-child(1) {
+.banner .buttons .aboutBtn button{
   background: #fff;
   color: #D80000;
   margin-right: 2rem;
@@ -289,7 +289,7 @@ body .banner h1 {
   color: #fff;
   background: #D80000;
 }
-.banner .buttons button:nth-child(2):hover {
+.banner .buttons .aboutBtn button:hover {
   color: #D80000;
   background: #fff;
 }
