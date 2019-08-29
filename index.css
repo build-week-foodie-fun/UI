@@ -88,6 +88,7 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
+
   .navigation .nav-logo {
     display: flex;
     flex-direction: column;
@@ -228,9 +229,9 @@ body .banner h1 {
 
   body section.banner h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: 20px;
-    width: 80%;
+    width: 90%;
     align-self: center;
     margin: 0 auto;
   }
