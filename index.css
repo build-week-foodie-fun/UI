@@ -190,7 +190,7 @@ body .banner {
   justify-content: center;
   align-items: flex-start;
   padding-left: 4rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .banner-heading {
@@ -255,12 +255,25 @@ body .banner h1 {
   border-radius: 3rem;
   background: #D80000;
   border: none;
+/*   justify-content: flex-start; */
+}
+
+/* .banner .buttons a button {
+  width: 150px;
+  padding: 1rem .75rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-radius: 10rem;
+  background: #d80000; 
   color: #ededed;
   outline: none;
   transition: ease-out 0.2s;
-}
+  margin-right: 2em;
+  border: none;
+}*/
 
-.banner .buttons button:nth-child(1) {
+.banner .buttons a button:nth-child(1) {
   background: #fff;
   color: #D80000;
   margin-right: 2rem;
@@ -276,7 +289,6 @@ body .banner h1 {
   color: #fff;
   background: #D80000;
 }
-
 .banner .buttons button:nth-child(2):hover {
   color: #D80000;
   background: #fff;
