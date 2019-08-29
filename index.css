@@ -194,16 +194,20 @@ body .banner {
 }
 
 .banner-heading {
-  max-width: 50%;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 body .banner h1 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 60px;
+  font-weight: 300;
+  width: 50%;
   text-align: left;
-  color: #fff;
-  font-weight: 2s00;
-  margin-bottom: 32px;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 0;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 1000px) {
@@ -212,7 +216,9 @@ body .banner h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: 0;
+    max-width: 100%;
   }
 
   .banner .banner-heading {
@@ -238,27 +244,39 @@ body .banner h1 {
 
 .banner .buttons {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
 }
 
-.banner .buttons a button {
+.banner .buttons button {
+  width: 25%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  background: #D80000;
+  border: none;
+/*   justify-content: flex-start; */
+}
+
+/* .banner .buttons a button {
   width: 150px;
   padding: 1rem .75rem;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   border-radius: 10rem;
-  background: #d80000;
+  background: #d80000; 
   color: #ededed;
   outline: none;
   transition: ease-out 0.2s;
   margin-right: 2em;
   border: none;
-}
+}*/
 
 .banner .buttons a button:nth-child(1) {
   background: #fff;
-  color: #d80000;
+  color: #D80000;
+  margin-right: 2rem;
 }
 
 .banner .buttons button:hover {
@@ -271,10 +289,9 @@ body .banner h1 {
   color: #fff;
   background: #D80000;
 }
-
-.banner .buttons a button:nth-child(2):hover {
-  color: #fff;
-  background: #D80000;
+.banner .buttons button:nth-child(2):hover {
+  color: #D80000;
+  background: #fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -286,6 +303,16 @@ body .banner h1 {
 
   .buttons button {
     margin: .7rem 0;
+  }
+
+  .banner .buttons button:nth-child(1) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner .buttons button {
+    width: 50%;
   }
 }
 
