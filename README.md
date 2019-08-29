@@ -4,7 +4,7 @@ Pages
 
 Three pages built: Home/Landing, Mission and About. Each with fully functioning navigation and button links.
 
-![homepage](images/website/tinyHomepage.png =150)
+<img src="images/website/tinyHomepage.png" alt="homepage" width="200px">
 ![mission page](images/website/tinyMission.png = 150)
 ![about page](images/website/tinyAbout.png =150)
 
