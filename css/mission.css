@@ -431,7 +431,7 @@ header span {
   transition: ease-in 0.2s;
 }
 .phonePics .tryItOut p:hover {
-  color: #c6c6c6;
+  color: #D80000;
 }
 
 @media screen and (max-width: 500px) {
