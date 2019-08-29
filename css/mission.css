@@ -374,17 +374,15 @@ header span {
 .phone-pics .app-img {
   display: flex;
   justify-content: space-evenly;
-  /* animation: slide 5s infinite; */
 }
 
 .phone-pics .app-img img:hover {
   transition: ease-in 0.2s;
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 .phone-pics .app-img img {
   max-width: 30%;
-  /* padding: 2.5%; */
   box-sizing: border-box;
   border-radius: 2em;
   transition: ease-out 0.2s;
@@ -395,7 +393,6 @@ header span {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  /* background-color: #D80000; */
 }
 
 @media screen and (max-width: 500px) {
@@ -420,9 +417,6 @@ header span {
 .phone-pics .try-it-out p:hover {
   transform: scale(1.2);
   transition: ease-in 0.2s;
-}
-
-.phone-pics .try-it-out p:hover {
   color: #D80000;
 }
 
