@@ -4,19 +4,24 @@ Pages
 
 Three pages built: Home/Landing, Mission and About. Each with fully functioning navigation and button links.
 
-<img src="images/website/tinyHomepage.png" alt="homepage" width="200px">
-![mission page](images/website/tinyMission.png = 150)
-![about page](images/website/tinyAbout.png =150)
+<img src="images/website/tinyHomepage.png" alt="homepage" width="250px">
+
+<img src="images/website/tinyMission.png" alt="mission" width="250px">
+
+<img src="images/website/tinyAbout.png" alt="about" width="250px">
 
 
 Animation
 
 Animation applied to buttons and images, including scale enlarging, color changes and shadows.
 
+<img src="images/website/tinyFeaturesAnimation.png" alt="features anime" width="400px">
 
-![features animation](images/website/tinyFeaturesAnimation.png =150)
-![nav animation](images/website/tinyNavbarAnimation.jpg =150)
-![features animation](images/website/tinyPhoneAnimation.png = 150)
+
+<img src="images/website/tinyNavbarAnimation.jpg" alt="nav anime" width="400px">
+
+
+<img src="images/website/tinyPhoneAnimation.png" alt="phone anime" width="400px">
 
 
 Liam:
