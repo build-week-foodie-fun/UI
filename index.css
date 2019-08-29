@@ -173,26 +173,66 @@ header span {
 
 body .banner {
   margin: 0 auto;
-  width: 95%;
+  max-width: 100%;
   height: 55rem;
   object-fit: cover;
   background: url("images/pizza.jpg");
   background-size: cover;
   background-position: center;
-  filter: grayscale(90%);
+  /* filter: grayscale(90%); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 4rem;
+  flex-wrap: wrap;
 }
 
 .banner-heading {
-  width: 50%;
+  max-width: 50%;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 2px 1px 2px #a3a2a2;
   margin-bottom: 1rem;
+}
+
+body .banner h1 {
+  font-size: 60px;
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
+  color: #D80000;
+  text-shadow: 2px 2px 2px #c7c4c4;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  body section.banner {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .banner .banner-heading {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  body section.banner h1 {
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 20px;
+    width: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body .banner {
+    margin-top: 4rem;
+  }
 }
 
 .banner .buttons {
@@ -236,32 +276,16 @@ body .banner {
   color: #D80000;
 }
 
-body .banner h1 {
-  font-size: 60px;
-  width: 50%;
-  margin-left: 5%;
-  text-align: left;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  padding: 15px;
-}
-
-@media screen and (max-width: 500px) {
-  body section.banner {
-    position: inherit;
-    display: flex;
+@media screen and (max-width: 1000px) {
+  .banner .buttons {
+    width: 100%;
     flex-direction: column;
-    margin-top: 40%;
+    padding-top: 2rem;
   }
-
-  body section.banner h1 {
-    text-align: center;
-    font-size: 30px;
-    border-radius: 20px;
-    width: 65%;
+  .buttons button {
+    margin: .7rem 0;
   }
 }
-
 
 /* content */
 
@@ -269,7 +293,6 @@ body .banner h1 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 5%;
 }
 
 .content h2 {
@@ -286,7 +309,7 @@ body .banner h1 {
 /* Explore and Eat*/
 
 .explore {
-  margin-bottom: 5%;
+  margin: 10rem 0;
   margin-left: 5%;
   max-width: 90%;
   display: flex;
@@ -332,10 +355,10 @@ body .banner h1 {
   display: flex;
   flex-direction: row-reverse;
   height: 50%;
-  margin-top: 10% auto;
   align-items: center;
   justify-content: space-evenly;
   background-color: #D80000;
+  padding: 3rem 0;
 }
 
 .howItWorks .div3 {
@@ -354,7 +377,7 @@ body .banner h1 {
 
 .howItWorks .div4 {
   justify-content: space-between;
-  margin: 5%;
+  /* margin: 5%; */
   width: 70%; 
   box-sizing: border-box; 
 }
@@ -362,20 +385,9 @@ body .banner h1 {
 .howItWorks div img {
     max-width: 25%;
     border-radius: 1em;
-  /* max-height: 30em; */
-  /* padding: 2em; */
-  /* justify-content: space-between; */
-/*   border-radius: 1em; */
 }
 
-@media screen and (max-width: 1000px) {
-  .howItWorks div .screenShot2,
-  .screenShot3 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .content {
     width: 100%;
     padding: 0;
@@ -383,6 +395,10 @@ body .banner h1 {
 
   .explore {
     padding: 5% 0;
+  }
+
+  .explore .div2 {
+    padding-top: 0;
   }
 
   .explore,
@@ -394,7 +410,9 @@ body .banner h1 {
   .explore div,
   .howItWorks .div3 {
     max-width: 95%;
-    margin-top: 10%;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
   }
 
   .explore .div1 {
@@ -406,8 +424,8 @@ body .banner h1 {
     height: auto;
   }
 
-  .howItWorks div {
-    justify-content: center;
+  .howItWorks .div4 {
+    max-width: 70%;
   }
 
   .aboutUs div {
@@ -434,12 +452,12 @@ body .banner h1 {
 
 .aboutUs .div5 h2{
   color: #7c7c7c;
-  font-size: 16px;
-  padding-right: 15px;
+  font-size: 1.6rem;
+  padding: 1rem 0;
 }
 .aboutUs .div5 p{
     color: #7c7c7c;
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
 .aboutUs a {
