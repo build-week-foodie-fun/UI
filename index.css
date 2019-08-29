@@ -207,6 +207,7 @@ body .banner h1 {
   color: white;
   text-transform: uppercase;
   padding: 15px 0;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 1000px) {
@@ -277,8 +278,8 @@ body .banner h1 {
 }
 
 .banner .buttons button:nth-child(2):hover {
-  color: #fff;
-  background: #D80000;
+  color: #D80000;
+  background: #fff;
 }
 
 @media screen and (max-width: 1000px) {
