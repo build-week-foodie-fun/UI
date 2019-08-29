@@ -300,7 +300,6 @@ header span {
   font-size: 2rem;
   color: white;
   padding: 2rem 0 1rem 0;
-  border-bottom: 1px solid #ededed;
 }
 
 .features div {
@@ -330,10 +329,15 @@ header span {
   background: #fff;
   transform: scale(1.125);
 }
-
+.features .list div:hover p{
+  transition: ease-out 0.2s;
+  color: #d80000;
+}
 .features .list div:hover .svg-inline--fa {
   transition: ease-out 0.2s;
   width: 100%;
+  color: #d80000;
+  border-bottom: 1px solid #d80000;
 }
 
 .features div .text {
@@ -375,7 +379,7 @@ header span {
 
 .phone-pics .app-img img:hover {
   transition: ease-in 0.2s;
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 
 .phone-pics .app-img img {

@@ -190,25 +190,20 @@ body .banner {
   justify-content: center;
   align-items: flex-start;
   padding-left: 4rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .banner-heading {
   max-width: 50%;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 2px 1px 2px #a3a2a2;
-  margin-bottom: 1rem;
 }
 
 body .banner h1 {
-  font-size: 60px;
-  width: 90%;
-  margin-left: 5%;
+  font-size: 3rem;
+  line-height: 3rem;
   text-align: left;
-  color: #3a3939;
-  text-shadow: 2px 2px 1px #dad9d9;
-  padding: 15px 0;
+  color: #fff;
+  font-weight: 2s00;
+  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -243,27 +238,27 @@ body .banner h1 {
 
 .banner .buttons {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: flex-start;
 }
 
-.banner .buttons button {
-  width: 45%;
-  padding: 1rem;
-  font-size: 1.6rem;
-  border-radius: .6rem;
-  background: #7c7c7c;
-  border: 1px solid white;
-  /* box-shadow: 2px 1px 1px #797777; */
+.banner .buttons a button {
+  width: 150px;
+  padding: 1rem .75rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-radius: 10rem;
+  background: #d80000;
   color: #ededed;
   outline: none;
   transition: ease-out 0.2s;
+  margin-right: 2em;
+  border: none;
 }
 
-.banner .buttons button:nth-child(1) {
+.banner .buttons a button:nth-child(1) {
   background: #fff;
-  color: #3a3939;
+  color: #d80000;
 }
 
 .banner .buttons button:hover {
@@ -277,7 +272,7 @@ body .banner h1 {
   background: #D80000;
 }
 
-.banner .buttons button:nth-child(2):hover {
+.banner .buttons a button:nth-child(2):hover {
   color: #fff;
   background: #D80000;
 }
