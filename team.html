@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foodie-Fun</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <script defer src="https://kit.fontawesome.com/245373f4d0.js"></script>
+  <script>
+    function openSlideMenu() {
+      document.getElementById('menu').style.width = '250px';
+      document.getElementById('content').style.marginLeft = '250px';
+    }
+  </script>
+
+  <script>
+    function closeSlideMenu() {
+      document.getElementById('menu').style.width = '0';
+      document.getElementById('content').style.marginLeft = '0';
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <!-- Regular Nav -->
+    <section class="navigation">
+      <div class="nav-logo">
+        <a href="index.html"><img src="images/Foodie_Icon.png" /></a>
+
+        <p>Foodie Fun</p>
+      </div>
+      <div class="web-nav">
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="https://foodiefunapp.netlify.com/login/">Login</a>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Mobile Slide Menu  -->
+    <section class=slide-menu">
+      <div id="slide-content">
+        <span class="slide">
+          <a href="#" onClick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+
+        <span id="menu" class="nav-slide">
+          <a href="#" onClick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <a href="index.html" class="model-list">Home</a>
+          <a href="about.html" class="model-list">About</a>
+          <a href="team.html" class="model-list">Team</a>
+          <a href="https://foodiefunapp.netlify.com/login/" class="model-list">Login</a>
+        </span>
+      </div>
+    </section>
+
+  </header>
+
+  <!-- Up Arrow -->
+  <a href="#" class="upArrow"><i class="fas fa-arrow-up"></i></a>
+  <section class="about-us">
+    <div class="about-info">
+      <h1>Who We Are</h1>
+      <p>Hello everyone! We are the guys and gals who built the Foodie-Fun app. We are all Lambda-school students on a
+        journey to become rockstar developers. Each of us at a different stage of the curriculum, were split up into
+        groups and tasked with specific goals. We had to collaborate and work together to bring our vision to life.</p>
+    </div>
+  </section>
+
+  <section class="meet-the-team">
+    <div class="title">
+      <h1>Meet The Team</h1>
+    </div>
+
+    <div class="team-profiles">
+
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/TL.png" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Mitchell Budge</li>
+            <li>Project Lead</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/mitchellgbudge" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/FE-1.png" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Kevin Tou</li>
+            <li>Front End developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/KevinTou" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/FE-2.jpeg" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Aleksandra Foksman</li>
+            <li>Front End Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/AlexFox1777" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/FE-3.jpeg" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Jojo Zhang</li>
+            <li>Front End Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/nomadkitty" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/FE-4.jpeg" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Karen Li</li>
+            <li>Front End Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/karenjli" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/FE-5.jpeg" alt="A picture of a front end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Desiree Morris</li>
+            <li>Front End Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/desiquinn" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/UI1.jpg" alt="A picture of a user interface dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Liam Sutton</li>
+            <li>User Interface Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/curm90" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/UI-2.JPG" alt="A picture of a user interface dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Sandra Kimball</li>
+            <li>User Interface Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/sandramkimball" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/IOS-1.jpeg" alt="A picture of an IOS dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Jeffrey Santana</li>
+            <li>IOS Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/Santana-Says" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/IOS-2.jpeg" alt="A picture of an IOS dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Donovan Langager</li>
+            <li>IOS Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/Uptiie" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/BE-1.png" alt="A picture of a back end dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Jason Aviles</li>
+            <li>Back End Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/Jason-Aviles" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/android-1.png" alt="A picture of an android dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Versilis Tyson</li>
+            <li>Android Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/vdtyson" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/android-2.jpeg" alt="A picture of an android dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Mai Tran</li>
+            <li>Android Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/itsmaitran" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/android-3.jpeg" alt="A picture of an android dev">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Ali Haider</li>
+            <li>Android Developer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/alihaider334" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="team-profile">
+        <div class="team-profile-img">
+          <img src="images/about-images/UX.jpeg" alt="A picture of a UX designer">
+        </div>
+        <div class="team-role">
+          <ul>
+            <li>Peter Noel</li>
+            <li>UX Designer</li>
+          </ul>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/Oceans6" target="blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>© Foodie Fun App 2019</p>
+  </footer>
+
+</body>
