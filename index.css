@@ -194,20 +194,18 @@ body .banner {
 }
 
 .banner-heading {
-  max-width: 50%;
-  background-color: #fff;
+  max-width: 100%;
   border-radius: 20px;
-  box-shadow: 2px 1px 2px #a3a2a2;
   margin-bottom: 1rem;
 }
 
 body .banner h1 {
   font-size: 60px;
-  width: 90%;
-  margin-left: 5%;
+  font-weight: 300;
+  width: 50%;
   text-align: left;
-  color: #3a3939;
-  text-shadow: 2px 2px 1px #dad9d9;
+  color: white;
+  text-transform: uppercase;
   padding: 15px 0;
 }
 
@@ -217,7 +215,9 @@ body .banner h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: 0;
+    max-width: 100%;
   }
 
   .banner .banner-heading {
@@ -244,18 +244,16 @@ body .banner h1 {
 .banner .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 50%;
 }
 
 .banner .buttons button {
-  width: 45%;
+  width: 25%;
   padding: 1rem;
   font-size: 1.6rem;
-  border-radius: .6rem;
-  background: #7c7c7c;
-  border: 1px solid white;
-  /* box-shadow: 2px 1px 1px #797777; */
+  border-radius: 3rem;
+  background: #D80000;
+  border: none;
   color: #ededed;
   outline: none;
   transition: ease-out 0.2s;
@@ -263,7 +261,8 @@ body .banner h1 {
 
 .banner .buttons button:nth-child(1) {
   background: #fff;
-  color: #3a3939;
+  color: #D80000;
+  margin-right: 2rem;
 }
 
 .banner .buttons button:hover {
@@ -291,6 +290,16 @@ body .banner h1 {
 
   .buttons button {
     margin: .7rem 0;
+  }
+
+  .banner .buttons button:nth-child(1) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner .buttons button {
+    width: 50%;
   }
 }
 
