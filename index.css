@@ -258,7 +258,7 @@ body .banner h1 {
 /*   justify-content: flex-start; */
 }
 
-/* .banner .buttons a button {
+.banner .buttons a button {
   width: 150px;
   padding: 1rem .75rem;
   font-size: 1rem;
@@ -271,7 +271,7 @@ body .banner h1 {
   transition: ease-out 0.2s;
   margin-right: 2em;
   border: none;
-}*/
+}
 
 .banner .buttons a button:nth-child(1) {
   background: #fff;
