@@ -379,7 +379,7 @@ header span {
 
 .phone-pics .app-img img:hover {
   transition: ease-in 0.2s;
-  transform: scale(1.25);
+  transform: scale(1.11);
 }
 
 .phone-pics .app-img img {
