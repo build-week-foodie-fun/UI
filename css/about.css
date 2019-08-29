@@ -3,23 +3,20 @@ html {
 }
 
 /* Header */
-
 header section {
-  margin: 1em auto;
   display: flex;
   justify-content: space-between;
 }
 
-header .webNav {
+header .web-nav {
   display: flex;
   width: 40%;
   justify-content: flex-end;
-  padding: 0 1rem;
 }
 
 
 /* Navigation */
-header .navLogo p{
+header .nav-logo p {
   font-family: 'Nunito', sans-serif;
   font-size: 2rem;
   color: #D80000;
@@ -30,18 +27,15 @@ header .navigation div {
   display: flex;
   align-items: center;
   width: 40%;
+  padding: 0 1rem;
 }
 
-header .navigation{
+header .navigation {
   border-bottom: 1px solid #ededed;
   padding: 1.6rem;
+  max-width: 100%;
 }
 
-header .navigation div .navLogo{
-  display: inherit;
-  align-items: center;
-  justify-content: space-between;
-}
 header .navigation ul a {
   justify-content: space-between;
   text-decoration: none;
@@ -67,7 +61,13 @@ header span {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+  .navigation .web-nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   header {
     position: fixed;
     background: #fff;
@@ -85,14 +85,16 @@ header span {
     align-items: center;
     width: 100%;
     padding: 2rem 0;
+    border-bottom: 1px solid #ededed;
   }
 
-  .navigation .navLogo{
+  .navigation .nav-logo {
     display: flex;
     flex-direction: column;
-  } 
+    width: 100%;
+  }
 
-  header .webNav ul {
+  header .web-nav ul {
     display: none;
   }
 
@@ -113,7 +115,7 @@ header span {
     display: initial;
   }
 
-  .navSlide {
+  .nav-slide {
     height: 100%;
     width: 0;
     position: fixed;
@@ -127,31 +129,32 @@ header span {
     transition: 0.7s;
   }
 
-  .navSlide a {
+  .nav-slide a {
     display: block;
+    padding: 20px 30px;
     font-size: 25px;
     text-decoration: none;
     color: black;
   }
 
-  .navSlide .model-list {
+  .nav-slide .model-list {
     margin-top: 3rem;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
-  .navSlide .fa-times {
+  .nav-slide .fa-times {
     position: absolute;
     top: 22px;
     right: 22px;
     margin-left: 40px;
   }
 
-  #slideContent span .slide a {
+  #slide-content span .slide a {
     color: black;
     font-size: 36px;
   }
 
-  #slideContent {
+  #slide-content {
     padding: 20px;
     transition: margin-left 0.7s;
     overflow: hidden;
@@ -160,13 +163,13 @@ header span {
     left: 0;
   }
 
-  #slideContent a {
+  #slide-content a {
     font-size: 2rem;
     color: #7c7c7c;
     transition: ease-out 0.2s;
   }
 
-  #slideContent a:hover {
+  #slide-content a:hover {
     color: black;
     transition: ease-in 0.2s;
   }
@@ -177,21 +180,29 @@ header span {
 .about-us {
   border-bottom: 1px solid #ededed;
 }
+
 .about-info {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 60%;
   margin: 2rem auto;
   padding: 0 4rem;
   line-height: 1.4;
   align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about-us {
     padding-top: 10rem;
     text-align: center;
   }
+
+  .about-info {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
   .about-info {
     max-width: 100%;
     padding: 1rem 1rem 2rem 1rem;

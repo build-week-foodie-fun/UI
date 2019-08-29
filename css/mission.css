@@ -4,36 +4,36 @@ html {
 
 /* Header */
 header section {
-  margin: 1em auto;
   display: flex;
   justify-content: space-between;
 }
 
-header .webNav {
-    display: flex;
-    width: 40%;
-    justify-content: flex-end;
-  }
-  
-  
-  /* Navigation */
-header .navLogo p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 2rem;
-    color: #D80000;
-    font-weight: 500;
+header .web-nav {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+
+/* Navigation */
+header .nav-logo p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #D80000;
+  font-weight: 500;
 }
 
 header .navigation div {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    padding: 0 1rem;
-  }
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding: 0 1rem;
+}
 
 header .navigation {
   border-bottom: 1px solid #ededed;
   padding: 1.6rem;
+  max-width: 100%;
 }
 
 header .navigation ul a {
@@ -61,7 +61,13 @@ header span {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+  .navigation .web-nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   header {
     position: fixed;
     background: #fff;
@@ -82,12 +88,13 @@ header span {
     border-bottom: 1px solid #ededed;
   }
 
-  .navigation .navLogo {
+  .navigation .nav-logo {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
-  header .webNav ul {
+  header .web-nav ul {
     display: none;
   }
 
@@ -108,7 +115,7 @@ header span {
     display: initial;
   }
 
-  .navSlide {
+  .nav-slide {
     height: 100%;
     width: 0;
     position: fixed;
@@ -122,7 +129,7 @@ header span {
     transition: 0.7s;
   }
 
-  .navSlide a {
+  .nav-slide a {
     display: block;
     padding: 20px 30px;
     font-size: 25px;
@@ -130,24 +137,24 @@ header span {
     color: black;
   }
 
-  .navSlide .model-list {
+  .nav-slide .model-list {
     margin-top: 3rem;
     padding: 0 2rem;
   }
 
-  .navSlide .fa-times {
+  .nav-slide .fa-times {
     position: absolute;
     top: 22px;
     right: 22px;
     margin-left: 40px;
   }
 
-  #slideContent span .slide a {
+  #slide-content span .slide a {
     color: black;
     font-size: 36px;
   }
 
-  #slideContent {
+  #slide-content {
     padding: 20px;
     transition: margin-left 0.7s;
     overflow: hidden;
@@ -156,23 +163,23 @@ header span {
     left: 0;
   }
 
-  #slideContent a {
+  #slide-content a {
     font-size: 2rem;
     color: #7c7c7c;
     transition: ease-out 0.2s;
   }
 
-  #slideContent a:hover {
+  #slide-content a:hover {
     color: black;
     transition: ease-in 0.2s;
   }
 }
 
-
 /* CONTENT */
 .content {
   margin: 0 auto;
   padding-top: 150px;
+  max-width: 100%;
 }
 
 .content h1 {
@@ -186,8 +193,7 @@ header span {
 .steps {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 5%;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 
 .steps div img {
@@ -195,41 +201,51 @@ header span {
 }
 
 /* HEAD */
-.steps div img{
-    height: 15em;
-    width: 15em;
-    object-fit: cover;
-    border-radius: 50%;
+.steps div img {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-@media screen and (max-width: 500px){
-    body .content{
-        /* width: 90%; */
-        margin: 0;
-    }
-    body .content p{
-        font-size: 18px;
-    }
-    .steps{
-        flex-direction: column;
-        justify-content: center;
-    }
+@media screen and (max-width: 1000px) {
+  body .content {
+    /* width: 90%; */
+    margin: 0;
+    padding-top: 5rem;
+  }
 
-    .steps div{
-        margin: 0 auto;
-    }
-    .steps div img{
-        height: 10em;
-        width: 10em;
-    }
+  body .content p {
+    font-size: 18px;
+  }
+
+  .steps {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .steps div {
+    margin: 0 auto;
+  }
+
+  .steps div img {
+    height: 10em;
+    width: 10em;
+  }
 }
 
-    /* ======= */
+@media screen and (max-width: 800px) {
+  body .content {
+    padding-top: 14rem;
+  }
+}
+
+/* ======= */
 
 .steps div h3 {
   text-align: center;
   color: #d80000;
-  padding: 1rem;
+  padding: 3rem 0 4rem 0;
   font-size: 1.5rem;
   font-weight: 100;
   font-family: 'Montserrat', sans-serif;
@@ -245,7 +261,7 @@ header span {
 
 @media screen and (max-width: 500px) {
   body .content {
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   body .content p {
@@ -279,10 +295,11 @@ header span {
   background: #D80000;
   box-shadow: 2px 3px 5px rgb(114, 6, 6);
 }
-.features h1{
+
+.features h1 {
   font-size: 2rem;
   color: white;
-  padding: 2em 0;
+  padding: 2rem 0 1rem 0;
   border-bottom: 1px solid #ededed;
 }
 
@@ -291,9 +308,10 @@ header span {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  padding: 1.2rem 0;
 }
 
-.features .list div{
+.features .list div {
   height: 250px;
   width: 170px;
   margin: 1em;
@@ -304,15 +322,16 @@ header span {
   border-radius: 1em;
   background: #fff;
   box-shadow: 2px 3px 5px rgb(114, 6, 6);
+  transition: ease-out 0.2s;
 }
 
-.features .list div:hover{
-  transition: ease-out 0.2s;
+.features .list div:hover {
+  transition: ease-in 0.2s;
   background: #fff;
   transform: scale(1.125);
 }
 
-.features .list div:hover .svg-inline--fa{
+.features .list div:hover .svg-inline--fa {
   transition: ease-out 0.2s;
   width: 100%;
 }
@@ -323,61 +342,69 @@ header span {
   flex-wrap: wrap;
   width: 40%;
 }
-.features .list p{
-    padding: 1rem;
-    font-size: 1rem;
-    color: #7c7c7c;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
+
+.features .list p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #7c7c7c;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-.features .list div .svg-inline--fa{
-    font-size: 3rem;
-    color: #7c7c7c;
-    margin: 0 auto;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid #7c7c7c;
-    transition: ease-out 0.2s;
+.features .list div .svg-inline--fa {
+  font-size: 3rem;
+  color: #7c7c7c;
+  margin: 0 auto;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #7c7c7c;
+  transition: ease-out 0.2s;
 }
 
 /*Phone Pics*/
-.phonePics {
-  margin-bottom: 2em;
+.phone-pics {
+  padding-top: 8rem;
 }
 
-.phonePics .appImg {
+.phone-pics .app-img {
   display: flex;
   justify-content: space-evenly;
   /* animation: slide 5s infinite; */
 }
 
-.phonePics .appImg img:hover{
-  transition: ease-out 0.2s;
-  transform: scale(1.3);
+.phone-pics .app-img img:hover {
+  transition: ease-in 0.2s;
+  transform: scale(1.05);
 }
 
-.phonePics .appImg img {
+.phone-pics .app-img img {
   max-width: 30%;
-  padding: 2.5%;
+  /* padding: 2.5%; */
   box-sizing: border-box;
   border-radius: 2em;
+  transition: ease-out 0.2s;
 }
 
 /* Try It Out Button */
-.phonePics .tryItOut {
+.phone-pics .try-it-out {
   display: flex;
   justify-content: center;
   align-items: baseline;
   /* background-color: #D80000; */
 }
 
-.tryItOut a{
+@media screen and (max-width: 500px) {
+  .phone-pics {
+    padding: 0;
+  }
+}
+
+.try-it-out a {
   text-decoration: none;
 }
 
-.phonePics .tryItOut p {
+.phone-pics .try-it-out p {
   color: #7c7c7c;
   font-size: 25px;
   font-weight: bold;
@@ -386,12 +413,13 @@ header span {
   transition: ease-out 0.2s;
 }
 
-.phonePics .tryItOut p:hover {
+.phone-pics .try-it-out p:hover {
   transform: scale(1.2);
   transition: ease-in 0.2s;
 }
-.phonePics .tryItOut p:hover {
-  color: #c6c6c6;
+
+.phone-pics .try-it-out p:hover {
+  color: #D80000;
 }
 
 @media screen and (max-width: 500px) {
@@ -425,32 +453,30 @@ header span {
     font-size: 18px;
   }
 
-  .phonePics .appImg {
+  .phone-pics .app-img {
     display: none;
     flex-direction: column;
   }
 }
 
 /* Get Started */
-.getStarted {
+.get-started {
   display: flex;
   justify-content: space-evenly;
-
   text-align: center;
-  align-items: center;
-  margin-top: 5em;
+  align-items: flex-end;
+  padding: 8rem 0 4rem 0;
 }
-.getStarted h1{
+
+.get-started h1 {
   font-size: 2rem;
-  margin-top: 5em;
 }
 
-.getStarted div {
+.get-started div {
   max-width: 30%;
-  padding-top: 1rem;
 }
 
-.getStarted div p {
+.get-started div p {
   line-height: 1.4;
   color: #7c7c7c;
   font-size: 1.2rem;
@@ -458,7 +484,7 @@ header span {
 }
 
 
-.getStarted div.button a button {
+.get-started div.button a button {
   margin: 0 auto;
   padding: 1.2rem;
   font-size: 1.6rem;
@@ -470,24 +496,25 @@ header span {
   transition: ease-out 0.2s;
 }
 
-.getStarted div.button a button:hover {
+.get-started div.button a button:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.2s;
 }
 
-@media screen and (max-width: 500px) {
-  .getStarted {
+@media screen and (max-width: 1000px) {
+  .get-started {
     flex-direction: column;
+    padding: 2rem 0;
   }
 
-  .getStarted div {
+  .get-started div {
     max-width: 90%;
     display: flex;
     justify-content: center;
   }
 
-  .getStarted .text2 {
+  .get-started .text-2 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -495,7 +522,7 @@ header span {
     margin: 0 auto;
   }
 
-  .getStarted div.button {
+  .get-started div.button {
     margin: 0 auto;
   }
 }
